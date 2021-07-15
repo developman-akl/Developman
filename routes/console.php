@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->purpose('Display an inspiring quote');
+
+// Run php artisan logs:clear to clear the laravel.log
+Artisan::command('logs:clear', function() {
+    exec('truncate -s 0 ' . storage_path('logs/*.log'));
+    $this->comment('Logs have been cleared!');
+})->describe('Clear log files');
