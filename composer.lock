@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65fa017016e87c955f20647a6e260ff8",
+    "content-hash": "fa653a8a91c7f9a1572a3db71aec26fa",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1419,6 +1419,77 @@
                 }
             ],
             "time": "2021-07-13T05:03:28+00:00"
+        },
+        {
+            "name": "mad-web/laravel-robots",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mad-web/laravel-robots.git",
+                "reference": "a5e04499dc290898b69658ed6ee27742b57c15a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mad-web/laravel-robots/zipball/a5e04499dc290898b69658ed6ee27742b57c15a0",
+                "reference": "a5e04499dc290898b69658ed6ee27742b57c15a0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0 || ^7.0 || ^8.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^4.0 || ^5.0 || ^6.0",
+                "phpunit/phpunit": "^8.0 || ^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MadWeb\\Robots\\RobotsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Robots": "MadWeb\\Robots\\RobotsFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MadWeb\\Robots\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mad-web",
+                    "email": "madweb.dev@gmail.com",
+                    "homepage": "https://github.com/mad-web",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Robots.txt generator service.",
+            "homepage": "https://github.com/mad-web/laravel-robots",
+            "keywords": [
+                "laravel-robots",
+                "mad-web",
+                "robots",
+                "seo"
+            ],
+            "support": {
+                "issues": "https://github.com/mad-web/laravel-robots/issues",
+                "source": "https://github.com/mad-web/laravel-robots/tree/3.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/mad-web",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-04-18T14:08:21+00:00"
         },
         {
             "name": "monolog/monolog",

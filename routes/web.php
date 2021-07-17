@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SitemapController;
+use App\Http\Controllers\RobotsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,5 +24,8 @@ Route::group([
     Route::get('/', function () {
         return view('home');
     });
+
+    Route::get('sitemap.xml', [SitemapController::class]);
+    Route::get('robots.txt', [RobotsController::class]);
 
 });

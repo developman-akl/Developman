@@ -15,7 +15,7 @@ mix
     .js('resources/js/app.js', 'public/js');
     
 mix
-    .copy('resources/css/app.css', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css');
     
 mix
     .postCss('resources/css/tailwind.css', 'public/css')
