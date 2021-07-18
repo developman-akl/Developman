@@ -68,10 +68,10 @@
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <x-svg.icons.livewire />
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                        <x-svg.icons.livewire />
                                     </div>
                                 </div>
                             </div>
@@ -103,10 +103,10 @@
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <x-svg.icons.livewire />
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                        <x-svg.icons.livewire />
                                     </div>
                                 </div>
                             </div>
@@ -138,10 +138,10 @@
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <x-svg.icons.livewire />
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                        <x-svg.icons.livewire />
                                     </div>
                                 </div>
                             </div>
