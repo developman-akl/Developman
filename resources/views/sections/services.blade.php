@@ -113,7 +113,7 @@
                                             <x-svg.icons.check />
                                         </span>
                                         <span class="ml-3 tracking-widest">
-                                            {!! nl2br('and KPI\'s') !!}
+                                            {!! nl2br('KPI\'s') !!}
                                         </span>
                                     </span>
                                 </li>
@@ -124,14 +124,13 @@
                         
                     <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-widest text-gray-900">
                         {!!  
-                            'in <b>ONE</b> place.<br><br>
-                            Using the <b>latest technologies</b> and equipped with an <b>intuitive user interface</b>.'
+                            'in <b>ONE</b> place utilising the <b>latest technologies</b> and equipped with an <b>easy to use</b> and <b>intuitive user interface</b>.'
                         !!}
                     </h3>
                     
                     <div class="md:text-left mt-6 text-center">
-                        <a href="#contact" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
-                            CONTACT DEVELOPMAN
+                        <a href="#about" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
+                            ABOUT DEVELOPMAN
                         </a>
                     </div>
             

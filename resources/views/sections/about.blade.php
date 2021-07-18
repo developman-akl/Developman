@@ -12,7 +12,7 @@
             <div class="md:w-1/2 md:pl-8 md:pr-0 md:tracking-widest md:pt-0 w-full px-3 pt-8 space-y-8 tracking-wider">
                 <h3 class="lg:text-lg mx-auto text-sm leading-normal md:leading-[4rem] text-center md:text-right text-[#0050D1]">
                     {!!  
-                        '<b>DEVELOPMAN</b> is here to help Startups and Small-sized businesses by creating custom software solutions for them, with more than a decade of experience in BMS and ERP implementations.'
+                        '<b>DEVELOPMAN</b> is here to help Startups and Small-sized businesses by creating affordable custom software solutions, with more than a decade of experience in BMS and ERP system implementations.'
                     !!}
                 </h3>
                 <h3 class="lg:text-lg mx-auto text-sm leading-normal md:leading-10 text-center md:text-right text-[#0050D1]">
