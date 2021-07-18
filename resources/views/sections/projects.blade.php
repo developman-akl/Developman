@@ -241,7 +241,7 @@
             </div>
         </div>
         <div class="md:text-left flex justify-center my-8 text-center">
-            <a href="#contact" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
+            <a href="#contact" type="button" class="transition ripple md:w-auto hover:bg-[#0041aa] hover:shadow-none shadow-lg focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md caret-transparent">
                 CONTACT DEVELOPMAN
             </a>
         </div>
