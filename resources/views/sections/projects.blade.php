@@ -59,19 +59,19 @@
                                 </div>
                                 <div class="justify-evenly flex items-center border-t">
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-5" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+                                        <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-5" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
+                                        <img class="h-4" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-5" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
+                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
                                         <x-svg.icons.livewire />
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <img class="h-9" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
                                 </div>
                             </div>
