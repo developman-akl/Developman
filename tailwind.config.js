@@ -11,8 +11,12 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['Nunito', ...defaultTheme.fontFamily.sans], body: ['Orbitron', ...defaultTheme.fontFamily.sans]
             },
+            screens: {
+                'portrait': {'raw': '(orientation: portrait)'},
+                'landscape': {'raw': '(orientation: landscape)'},
+              }
         },
     },
 

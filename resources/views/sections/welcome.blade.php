@@ -1,21 +1,39 @@
-<section class="w-full px-6 pb-12 antialiased bg-white">
-    <div class="max-w-7xl mx-auto">
+<section class="header-background flex flex-col relative justify-between pb-12 h-[100vh]">
 
-        <!-- Main Hero Content -->
-        <div class="md:max-w-none md:text-center container max-w-lg px-4 py-16 mx-auto text-left">
-            <h1 class="md:text-center sm:leading-none md:text-6xl lg:text-7xl text-5xl font-extrabold leading-10 tracking-tight text-left text-gray-900"><span class="md:block inline">Start Crafting Your</span> <span class="bg-clip-text bg-gradient-to-br from-indigo-600 to-indigo-500 md:inline-block relative mt-2 text-transparent">Next Great Idea</span></h1>
-            <div class="md:mt-12 md:max-w-lg md:text-center lg:text-lg mx-auto mt-5 text-gray-500">Simplifying the creation of landing pages, blog pages, application pages and so much more!</div>
-            <div class="flex flex-col items-center mt-12 text-center">
-                <span class="md:w-auto relative inline-flex w-full">
-                    <a href="#_" type="button" class="md:w-auto hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 inline-flex items-center justify-center w-full px-8 py-4 text-base font-bold leading-6 text-white bg-indigo-600 border border-transparent rounded-full">
-                        Purchase Now
-                    </a>
-                    <span class="absolute top-0 right-0 px-2 py-1 -mt-3 -mr-6 text-xs font-medium leading-tight text-white bg-green-400 rounded-full">only $15/mo</span>
-                </span>
-                <a href="#" class="mt-3 text-sm text-indigo-500">Learn More</a>
+    <!-- Main Hero Content -->
+    <div class="px-4 pt-10 2xl:ml-[10%] ml-[3%] text-left">
+        <div class="portrait:md:text-5xl lg:text-6xl portrait:sm:text-4xl sm:text-2xl absolute z-[9999] space-y-10 text-xl font-extrabold tracking-widest text-left text-gray-900">
+            <h1 class="space-y-3">
+                <div class="block font-extrabold text-left">
+                    <span class="text-[#0050D1] font-black">C</span>ustom
+                    <span class="text-[#0050D1] font-black">S</span>olutions,
+                </div> 
+                <div class="block font-extrabold text-left">
+                    <span class="text-[#0050D1] font-black">O</span>utstandin
+                    <span class="text-[#0050D1] font-black">R</span>esults.
+                </div>
+            </h1>
+            
+            <div class="md:block absolute text-left">
+                <a href="#_" type="button" class="md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md">
+                    Learn More
+                </a>
             </div>
         </div>
-        <!-- End Main Hero Content -->
-
     </div>
+    <!-- End Main Hero Content -->
+
+    {{-- Auckland Silhouette --}}
+    <figure class="image_container">
+        <div class="header_city_wrapper">
+            <div class="header_city_silhouette">
+                <img src="{{ asset('storage/images/auckland-skyline-silhouette.svg') }}" alt="Developman Auckland Silhouette" />
+            </div>
+            <div class="header_city_signal">
+                <img src="{{ asset("storage/images/developmanlogosignal.svg") }}" alt="Developman Logo Signal"/>
+            </div>
+        </div>
+    </figure>
+    {{-- End Auckland Silhouette --}}
+
 </section>

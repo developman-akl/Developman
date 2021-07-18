@@ -26,10 +26,14 @@
         </script>
 
         <!-- Fonts -->
-        <link href="https://fonts.gstatic.com" rel="preconnect" >
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Orbitron" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- Scripts -->
+        {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script> --}}
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
         
         <!-- Styles -->
@@ -40,7 +44,7 @@
         {!! Robots::metaTag() !!}
 
     </head>
-    <body class="antialiased" style="font-family: Orbitron">
+    <body class="font-body antialiased">
         <div class="bg-gray-50 min-h-screen">
 
             <!-- Page Heading Fixed Nav Bar-->

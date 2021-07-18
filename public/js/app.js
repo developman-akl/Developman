@@ -1973,7 +1973,24 @@ __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
 
 window.Alpine = (alpinejs__WEBPACK_IMPORTED_MODULE_0___default());
-alpinejs__WEBPACK_IMPORTED_MODULE_0___default().start();
+alpinejs__WEBPACK_IMPORTED_MODULE_0___default().start(); // Developman Signal animation
+
+var $searchlight = $(".header_city_signal");
+var tl = new TimelineMax();
+tl.fromTo($searchlight, 3, {
+  rotation: -1,
+  x: -10,
+  y: -25,
+  skewX: -4,
+  transformOrigin: "0px 0px 0px",
+  scale: 1
+}, {
+  rotation: 1,
+  x: 10,
+  repeat: -1,
+  yoyo: true,
+  ease: Power1.easeInOut
+}, "-=20"); // END - Developman Signal animation
 
 /***/ }),
 
