@@ -12,10 +12,10 @@
                 loop: true,
                 slidesPerView: 1,
                 spaceBetween: 0,
-                {{-- autoplay: {
+                autoplay: {
                     delay: 10000,
                     disableOnInteraction: false,
-                }, --}}
+                },
                 breakpoints: {
                     640: {
                         slidesPerView: 1,
@@ -42,19 +42,129 @@
     
             <div x-ref="container" class="swiper-container">
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
+                    
+                    {{-- Javasolj! --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_task_manager.jpg') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800 uppercase">
-                                        {!! 'Bakery Task Manager<br><br>' !!}
+                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                        {!! 'Javasolj!<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
-                                        {!! 'Business Management Software for a bakery to make the everyday task management a breeze.' !!}
+                                        {!! 'Web Application for everyday inquiries and commission for the winner proposals.<br><br><br>' !!}
+                                    </article> 
+                                </div>
+                                <div class="justify-evenly flex items-center border-t">
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <x-svg.icons.tailwind />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <x-svg.icons.livewire />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    {{-- SeiyraDesign --}}
+                    <div class="swiper-slide p-1 transition duration-1000">
+                        <div class="max-w-2xl p-2 mx-auto">
+                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                                <div class="md:flex-shrink-0 border-b">
+                                    <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                </div>
+                                <div class="cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                        {!! 'SeiyraDesign<br><br>' !!}
+                                    </h2>
+                                    <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
+                                        {!! 'The official web page of SeiyraDesign.<br><br><br><br>' !!}
+                                    </article> 
+                                </div>
+                                <div class="justify-evenly flex items-center border-t">
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="HTML5 Powered" title="SASS">
+                                        
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <x-svg.icons.livewire />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    {{-- Novaerus --}}
+                    <div class="swiper-slide p-1 transition duration-1000">
+                        <div class="max-w-2xl p-2 mx-auto">
+                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                                <div class="md:flex-shrink-0 border-b">
+                                    <img src="{{ asset('storage/images/project_novaerus.jpg') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                </div>
+                                <div class="cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                        {!! 'Novaerus BMS<br><br>' !!}
+                                    </h2>
+                                    <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
+                                        {!! 'Business Management Software of Novaerus which is an airfilter vendor and service company.<br><br>' !!}
+                                    </article> 
+                                </div>
+                                <div class="justify-evenly flex items-center border-t">
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <x-svg.icons.tailwind />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    </div>
+                                    <div class="flex justify-center mx-auto">
+                                        <x-svg.icons.livewire />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+
+                    {{-- Manufacturing --}}
+                    <div class="swiper-slide p-1 transition duration-1000">
+                        <div class="max-w-2xl p-2 mx-auto">
+                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                                <div class="md:flex-shrink-0 border-b">
+                                    <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                </div>
+                                <div class="cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                        {!! 'Medical Shoes Manufacturing BMS<br><br>' !!}
+                                    </h2>
+                                    <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
+                                        {!! 'Business Management Software for a bakery to make the everyday task management a breeze.<br><br>' !!}
                                     </article> 
                                 </div>
                                 <div class="justify-evenly flex items-center border-t">
@@ -76,20 +186,21 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
-                    
+                    </div> 
+
+                    {{-- Task Manager --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_javasolj.svg') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800 uppercase">
-                                        {!! 'Javasolj!<br><br>' !!}
+                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                        {!! 'Bakery Task Manager<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
-                                        {!! 'Web Application for everyday inquiries and commission for the winner proposals.' !!}
+                                        {!! 'Business Management Software for a bakery to make the everyday task management a breeze.<br><br>' !!}
                                     </article> 
                                 </div>
                                 <div class="justify-evenly flex items-center border-t">
@@ -97,42 +208,7 @@
                                         <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
                                     <div class="flex justify-center mx-auto">
-                                        <x-svg.icons.tailwind />
-                                    </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
-                                    </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
-                                    </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <x-svg.icons.livewire />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>  
-                    
-                    <div class="swiper-slide p-1 transition duration-1000">
-                        <div class="max-w-2xl p-2 mx-auto">
-                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
-                                <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/glenn-carstens-peters-npxXWgQ33ZQ-unsplash@2x.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
-                                </div>
-                                <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800 uppercase">
-                                        {!! 'Logistics and Inventory Management' !!}
-                                    </h2>
-                                    <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
-                                        {!! 'Business Management Software of an airfilter vendor and service company.' !!}
-                                    </article> 
-                                </div>
-                                <div class="justify-evenly flex items-center border-t">
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
-                                    </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <x-svg.icons.tailwind />
+                                        <img class="h-4" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
                                     </div>
                                     <div class="flex justify-center mx-auto">
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
@@ -160,17 +236,5 @@
             </div>
         </div>
     </div>
-    
-    {{-- @push('styles')
-        @once
-            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        @endonce
-    @endpush
-    
-    @push('scripts')
-        @once
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        @endonce
-    @endpush --}}
         
 </section>
