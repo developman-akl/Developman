@@ -10,6 +10,14 @@ body {
   position: relative;
 }
 
+.scrollbar-thumb {
+  background-color: #8f8f8f;
+}
+
+.scrollbar-track {
+  background-color: transparent;
+}
+
 .header-background {
   background: transparent linear-gradient(180deg, #0050D16B 0%, #FFFFFF54 100%) 0% 0% no-repeat padding-box;
 }

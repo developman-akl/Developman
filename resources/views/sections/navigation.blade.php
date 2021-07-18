@@ -1,7 +1,7 @@
 <section id="navigation">
     <div class="items-center w-full px-4 bg-[#0050D16B]">
         <nav class="2xl:max-w-[90vw] z-[999999999] max-w-[95vw] border-1 relative flex items-center justify-between mx-auto space-x-12 text-lg tracking-widest">
-            <a href="/">
+            <a href="#navigation">
                 <img class="w-[280px]" src="{{ asset('storage/images/developmanlogo.svg') }}" alt="Developman Logo" />
             </a>
 
@@ -25,16 +25,16 @@
                 id="sideMenuHideOnMobile"
                 class="rounded-md lg:mt-4 lg:w-auto lg:px-4 lg:flex-row lg:translate-y-0 lg:inline-flex lg:items-center lg:mx-1 lg:uppercase  border-1 lg:shadow-none text-[#0050D1] absolute top-0 right-0 z-10 flex flex-col w-auto pl-4 pr-10 font-extrabold transition-all duration-500 transform translate-x-0 -translate-y-full bg-white/80 lg:bg-transparent border-gray-900 shadow-lg"
             >
-                <a href="#" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="#services" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     SERVICES
                 </a>
-                <a href="#" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="#about" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     ABOUT
                 </a>
-                <a href="#" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="#projects" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     PROJECTS
                 </a>
-                <a href="#" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="#contact" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     CONTACT
                 </a>
             </div>

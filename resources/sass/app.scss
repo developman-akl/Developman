@@ -6,8 +6,17 @@
 html, body {
     overflow-x: hidden;
 }
+
 body {
     position: relative;
+}
+
+.scrollbar-thumb {
+    background-color: rgb(143, 143, 143);
+}
+
+.scrollbar-track {
+    background-color: transparent;
 }
 
 .header-background {
@@ -171,9 +180,6 @@ body {
                 left: 24%;
                 width: 52%;
             }
-
-
-    
 
             img {
                 max-width: 70%;
