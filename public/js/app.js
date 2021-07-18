@@ -1977,7 +1977,7 @@ alpinejs__WEBPACK_IMPORTED_MODULE_0___default().start(); // Developman Signal an
 
 var $searchlight = $(".header_city_signal");
 var tl = new TimelineMax();
-tl.fromTo($searchlight, 3, {
+tl.fromTo($searchlight, 5, {
   rotation: -1,
   x: -10,
   y: -25,

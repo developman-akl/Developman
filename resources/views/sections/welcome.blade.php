@@ -1,7 +1,7 @@
-<section class="header-background flex flex-col relative justify-between pb-12 h-[100vh]">
+<section class="header-background flex flex-col relative justify-between pb-4 h-[100vh]">
 
     <!-- Main Hero Content -->
-    <div class="px-4 pt-10 2xl:ml-[10%] ml-[3%] text-left">
+    <div class="px-4 pt-10 2xl:ml-[4.6%] ml-[3%] text-left">
         <div class="portrait:md:text-5xl lg:text-6xl portrait:sm:text-4xl sm:text-2xl absolute z-[9999] space-y-10 text-xl font-extrabold tracking-widest text-left text-gray-900">
             <h1 class="space-y-3">
                 <div class="block font-extrabold text-left">

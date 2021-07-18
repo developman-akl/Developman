@@ -1,29 +1,38 @@
-<section class="md:px-0 px-2 py-32 bg-white">
-    <div class="xl:px-5 container items-center max-w-6xl px-8 mx-auto">
-        <div class="sm:-mx-3 flex flex-wrap items-center">
-        <div class="md:w-1/2 md:px-3 w-full">
-            <div class="sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-8 xl:space-y-9 sm:pr-5 lg:pr-0 md:pb-0 w-full pb-6 space-y-6">
-            <h1 class="sm:text-5xl md:text-4xl lg:text-5xl xl:text-6xl text-4xl font-extrabold tracking-tight text-gray-900">
-                <span class="xl:inline block">Beautiful Pages to</span>
-                <span class="xl:inline block text-indigo-600">Tell Your Story!</span>
-            </h1>
-            <p class="sm:max-w-md lg:text-xl md:max-w-3xl mx-auto text-base text-gray-500">It's never been easier to build beautiful websites that convey your message and tell your story.</p>
-            <div class="sm:flex-row sm:space-x-4 relative flex flex-col">
-                <a href="#_" class="sm:mb-0 hover:bg-indigo-700 sm:w-auto flex items-center w-full px-6 py-3 mb-3 text-lg text-white bg-indigo-600 rounded-md">
-                Try It Free
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </a>
-                <a href="#_" class="hover:bg-gray-200 hover:text-gray-600 flex items-center px-6 py-3 text-gray-500 bg-gray-100 rounded-md">
-                Learn More
-                </a>
+<section class="md:px-0 px-2 py-12 mb-10 bg-[#ECECEC]">
+    <h1 class="sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mb-24 text-xl font-extrabold tracking-wider text-center text-gray-900">
+        <span class="">ABOUT</span>
+    </h1>
+    <div class="font-content xl:px-5 container items-center max-w-6xl px-8 mx-auto font-semibold text-right">
+            
+        <div class="sm:-mx-3 flex flex-wrap justify-between">
+            <div class="md:w-1/2 w-full">
+                <div class="sm:rounded w-full h-auto overflow-hidden rounded" style="box-shadow: 10px 13px #001E4F;">
+                    <img src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg">
+                </div>
             </div>
+            <div class="md:w-1/3 md:px-3 w-full space-y-8">
+                <h3 class="lg:text-base mx-auto text-sm leading-8 tracking-wider text-right text-[#0050D1]">
+                    {!!  
+                        'DEVELOPMAN is here to help Startups and Small-sized businesses by creating custom software solutions for them, with more than a decade of experience in BMS implementation.'
+                    !!}
+                </h3>
+                <h3 class="lg:text-base mx-auto text-sm leading-8 tracking-wider text-right text-[#0050D1]">
+                    {!!  
+                        'Our team could work with you remotely meanwhile you will have detailed insight over the whole implementation process, milestone by milestone.'
+                    !!}
+                </h3>
+                
+                <div class="relative flex flex-row-reverse mt-6 text-right">
+                    <a href="#_" type="button" class="font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-[#0050D1] border-[#0050D1] bg-white border-2 rounded-md">
+                        GO TO PROJECTS
+                    </a>
+                </div>
             </div>
+        
+
+        
         </div>
-        <div class="md:w-1/2 w-full">
-            <div class="sm:rounded-xl w-full h-auto overflow-hidden rounded-md shadow-xl">
-                <img src="https://cdn.devdojo.com/images/november2020/hero-image.jpeg">
-            </div>
-        </div>
-        </div>
+        
     </div>
+    
     </section>
