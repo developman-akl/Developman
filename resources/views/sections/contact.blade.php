@@ -1,4 +1,4 @@
-<section class="w-full bg-white">
+<section id="contact" class="w-full bg-white">
 
     <div class="max-w-7xl mx-auto">
         <div class="lg:flex-row flex flex-col">

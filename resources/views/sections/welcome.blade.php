@@ -1,4 +1,4 @@
-<section class="header-background flex flex-col relative justify-between pb-4 h-[100vh]">
+<section id="welcome" class="header-background flex flex-col relative justify-between pb-4 h-[100vh]">
 
     <!-- Main Hero Content -->
     <div class="px-4 pt-10 2xl:ml-[4.6%] ml-[3%] text-left">
@@ -9,13 +9,13 @@
                     <span class="text-[#0050D1] font-black">S</span>olutions,
                 </div> 
                 <div class="block font-extrabold text-left">
-                    <span class="text-[#0050D1] font-black">O</span>utstandin
+                    <span class="text-[#0050D1] font-black">O</span>utstanding
                     <span class="text-[#0050D1] font-black">R</span>esults.
                 </div>
             </h1>
             
             <div class="md:block absolute text-left">
-                <a href="#_" type="button" class="md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md">
+                <a href="#_" type="button" class="transition ripple md:w-auto hover:bg-[#0041aa] hover:shadow-none shadow-lg focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md">
                     Learn More
                 </a>
             </div>
