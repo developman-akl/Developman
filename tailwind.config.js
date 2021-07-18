@@ -18,7 +18,10 @@ module.exports = {
             screens: {
                 'portrait': {'raw': '(orientation: portrait)'},
                 'landscape': {'raw': '(orientation: landscape)'},
-              }
+            },
+            boxShadow: {
+                news: '1px 3px 6px rgba(0, 0, 0, 0.52)'
+            },
         },
     },
 

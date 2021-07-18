@@ -46,9 +46,9 @@
                     {{-- Javasolj! --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
-                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                            <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
                                     <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
@@ -58,20 +58,21 @@
                                         {!! 'Web Application for everyday inquiries and commission for the winner proposals.<br><br><br>' !!}
                                     </article> 
                                 </div>
-                                <div class="justify-evenly flex items-center border-t">
-                                    <div class="flex justify-center mx-auto">
+                                <div class="justify-evenly sm:flex-row sm:space-y-0 flex flex-col items-center py-1 space-y-2 border-t">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.tailwind />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    <div class="flex items-center justify-center mx-auto space-x-1">
+                                        <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
+                                        <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.livewire />
                                     </div>
                                 </div>
@@ -82,9 +83,9 @@
                     {{-- SeiyraDesign --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
-                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                            <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
                                     <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
@@ -94,21 +95,22 @@
                                         {!! 'The official web page of SeiyraDesign.<br><br><br><br>' !!}
                                     </article> 
                                 </div>
-                                <div class="justify-evenly flex items-center border-t">
-                                    <div class="flex justify-center mx-auto">
+                                <div class="justify-evenly sm:flex-row sm:space-y-0 flex flex-col items-center py-1 space-y-2 border-t">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="HTML5 Powered" title="SASS">
                                         
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    <div class="flex items-center justify-center mx-auto space-x-1">
+                                        <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
+                                        <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.livewire />
                                     </div>
                                 </div>
@@ -119,9 +121,9 @@
                     {{-- Novaerus --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
-                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                            <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_novaerus.jpg') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_novaerus.jpg') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
                                     <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
@@ -131,20 +133,21 @@
                                         {!! 'Business Management Software of Novaerus which is an airfilter vendor and service company.<br><br>' !!}
                                     </article> 
                                 </div>
-                                <div class="justify-evenly flex items-center border-t">
-                                    <div class="flex justify-center mx-auto">
+                                <div class="justify-evenly sm:flex-row sm:space-y-0 flex flex-col items-center py-1 space-y-2 border-t">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.tailwind />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    <div class="flex items-center justify-center mx-auto space-x-1">
+                                        <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
+                                        <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.livewire />
                                     </div>
                                 </div>
@@ -155,9 +158,9 @@
                     {{-- Manufacturing --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
-                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                            <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
                                     <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
@@ -167,20 +170,21 @@
                                         {!! 'Business Management Software for a bakery to make the everyday task management a breeze.<br><br>' !!}
                                     </article> 
                                 </div>
-                                <div class="justify-evenly flex items-center border-t">
-                                    <div class="flex justify-center mx-auto">
+                                <div class="justify-evenly sm:flex-row sm:space-y-0 flex flex-col items-center py-1 space-y-2 border-t">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    <div class="flex items-center justify-center mx-auto space-x-1">
+                                        <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
+                                        <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.livewire />
                                     </div>
                                 </div>
@@ -191,9 +195,9 @@
                     {{-- Task Manager --}}
                     <div class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
-                            <div class="shadow-news rounded-xl mb-6 tracking-wider bg-gray-100 border" >
+                            <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
-                                    <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-fit w-full rounded-b-none">
+                                    <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
                                     <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
@@ -203,20 +207,21 @@
                                         {!! 'Business Management Software for a bakery to make the everyday task management a breeze.<br><br>' !!}
                                     </article> 
                                 </div>
-                                <div class="justify-evenly flex items-center border-t">
-                                    <div class="flex justify-center mx-auto">
+                                <div class="justify-evenly sm:flex-row sm:space-y-0 flex flex-col items-center py-1 space-y-2 border-t">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
-                                        <img class="h-8" src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" alt="Laravel Logo" title="Laravel" />
+                                    <div class="flex items-center justify-center mx-auto space-x-1">
+                                        <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
+                                        <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
                                     </div>
-                                    <div class="flex justify-center mx-auto">
+                                    <div class="flex items-center justify-center mx-auto">
                                         <x-svg.icons.livewire />
                                     </div>
                                 </div>
