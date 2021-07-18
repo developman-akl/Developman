@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
         {{-- SEO --}}
         <title>{{ config('app.name', 'Developman') }}</title>
         <meta name="description" content="Tailor-made Web Application and Business Management Software Development, Auckland New Zealand">
@@ -32,19 +31,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-        <!-- Scripts -->
-        
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-
-        <script src="{{ asset('js/app.js') }}" defer></script>
         
         @yield('styles')
         @stack('styles')
         @livewireStyles
+
+        <!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="{{ asset('js/app.js') }}" defer></script>
         
         <!-- robots.txt -->
         {!! Robots::metaTag() !!}
@@ -69,8 +68,8 @@
                 <!-- Section About -->
                 @include('sections.about')
                 
-                <!-- Section Case studies -->
-                {{-- @include('sections.case-studies') --}}
+                <!-- Section Projects -->
+                @include('sections.projects')
                
                 <!-- Section Contact -->
                 @include('sections.contact')
@@ -78,6 +77,7 @@
                 <!-- Section Footer -->
                 @include('sections.footer')
 
+                {{-- To the top button --}}
                 <div class="bottom-4 right-2 sm:bottom-8 sm:right-5 fixed" title="Jump to the top" class="bg-white">
                     <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
                         <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#0050D1] text-[#001E4F] bg-white w-14 h-14 rounded-full" viewBox="0 0 20 20" fill="currentColor">
@@ -92,6 +92,6 @@
         @livewireScripts
         @yield('scripts')
         @stack('scripts')
-
+        
     </body>
 </html>

@@ -22,7 +22,7 @@
                 </h3>
                 
                 <div class="relative flex flex-row-reverse mt-6 text-right">
-                    <a href="#_" type="button" class="transition ripple font-body md:w-auto hover:bg-[#0050D1] hover:shadow-none shadow-lg hover:text-white focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-[#0050D1] border-[#0050D1] bg-white border-2 rounded-md caret-transparent">
+                    <a href="#projects" type="button" class="transition ripple font-body md:w-auto hover:bg-[#0050D1] hover:shadow-none shadow-lg hover:text-white focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-[#0050D1] border-[#0050D1] bg-white border-2 rounded-md caret-transparent">
                         GO TO PROJECTS
                     </a>
                 </div>

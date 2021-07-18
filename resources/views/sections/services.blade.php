@@ -8,17 +8,17 @@
                 <div class="sm:max-w-md lg:max-w-lg md:space-y-3 lg:space-y-4 xl:space-y-5 sm:pr-5 lg:pr-0 md:pb-0 w-full pb-6 space-y-6">
                     <h2 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-widest">
                         {!!  
-                            'Looking for a tailor-made <u>Business Management Software (BMS)</u> or <u>Web Application</u>?'
+                            'Looking for a tailor-made <b>Business Management Software (BMS)</b> or <b>Web Application</b>?'
                         !!}
                     </h2>
                     <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-wider">
                         {!!  
-                            'Which will be created solely according to <u>your business needs</u>?'
+                            'Which will be created solely according to <b>your business needs</b>?'
                         !!}
                     </h3>
                     <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-wider">
                         {!!  
-                            'Which takes the <u>efficiency</u> and <u>revenue</u> of your business to the next level?'
+                            'Which takes the <b>efficiency</b> and <b>revenue</b> of your business to the next level?'
                         !!}
                     </h3>
                     <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-[1] tracking-wider">
@@ -124,8 +124,8 @@
                         
                     <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-widest text-gray-900">
                         {!!  
-                            'in <u>ONE</u> place.<br><br>
-                            Using the <u>latest technologies</u> and equipped with an <u>intuitive user interface</u>.'
+                            'in <b>ONE</b> place.<br><br>
+                            Using the <b>latest technologies</b> and equipped with an <b>intuitive user interface</b>.'
                         !!}
                     </h3>
                     

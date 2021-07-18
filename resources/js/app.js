@@ -1,10 +1,10 @@
 // require('alpinejs');
 
-// import Alpine from 'alpinejs'
+import Alpine from 'alpinejs'
 
-// window.Alpine = Alpine
+window.Alpine = Alpine
 
-// Alpine.start()
+Alpine.start()
 
 var $searchlight = $(".header_city_signal");
 var tl = new TimelineMax();
