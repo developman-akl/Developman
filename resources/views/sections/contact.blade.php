@@ -9,22 +9,145 @@
         <h2 class="sm:text-sm md:text-base lg:text-lg xl:text-xl mb-0 2xl:mb-12 text-xl font-extrabold tracking-wider text-center text-[#0050D1]">
             <span>CONTACT DEVELOPMAN TODAY</span>
         </h2>
-        <div class="flex flex-col items-center mx-auto">
-            <div class="md:mx-2 hover:border-[#0050D1] flex mx-4 my-8 w-4/5 border-b-2 border-gray-700">
-                <input class="text-center md:text-left focus:outline-none caret-black bg-[#ECECEC] w-full py-3 pl-5 border-0 placeholder-[#0050D1] placeholder-opacity-75" type="text" placeholder="Name" autocomplete="on">
+        
+        <form action="/contact" method="POST" x-cloak x-data="contactForm()" @submit.prevent="submitData">
+            @csrf
+            
+            <div class="flex flex-col items-center mx-auto">
+                <div class="md:mx-2 hover:border-[#0050D1] flex mx-4 my-8 w-4/5 border-b-2 border-gray-700">
+                    <input type="text" name="name" x-model="formData.name" placeholder="Name" autocomplete="on" class="text-center md:text-left focus:outline-none caret-black bg-[#ECECEC] w-full py-3 pl-5 border-0 placeholder-[#0050D1] placeholder-opacity-75">
+                </div>
+                <div class="md:mx-2 hover:border-[#0050D1] flex mx-4 my-8 w-4/5 border-b-2 border-gray-700">
+                    <input type="email" name="email" x-model="formData.email" placeholder="Email" class="text-center md:text-left focus:outline-none caret-black bg-[#ECECEC] w-full py-3 pl-5 border-0 placeholder-[#0050D1] placeholder-opacity-75">
+                </div>
+                <div class="md:mx-2 hover:border-[#0050D1] flex mx-4 my-8 w-4/5 border-b-2 border-gray-700">
+                    <textarea name="message" x-model="formData.message" rows="10" cols="50" class="text-center md:text-left caret-black bg-[#ECECEC] w-full focus:outline-none h-40 py-3 pl-5 placeholder-[#0050D1] placeholder-opacity-75 border-0" placeholder="Message"></textarea>
+                </div>
             </div>
-            <div class="md:mx-2 hover:border-[#0050D1] flex mx-4 my-8 w-4/5 border-b-2 border-gray-700">
-                <input class="text-center md:text-left focus:outline-none caret-black bg-[#ECECEC] w-full py-3 pl-5 border-0 placeholder-[#0050D1] placeholder-opacity-75" type="email" placeholder="Email">
+            
+            <div class="relative flex justify-center px-2 mt-6">
+                <button x-text="buttonLabel" @click="hideAlert" :disabled="loading" class="disabled:opacity-50 hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:py-4 md:text-base px-24 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
+                    SEND
+                </button>
             </div>
-            <div class="md:mx-2 hover:border-[#0050D1] flex mx-4 my-8 w-4/5 border-b-2 border-gray-700">
-                <textarea rows="10" cols="50" class="text-center md:text-left caret-black bg-[#ECECEC] w-full focus:outline-none h-40 py-3 pl-5 placeholder-[#0050D1] placeholder-opacity-75 border-0" placeholder="Message"></textarea>
+
+            <div class="flex items-center justify-center mt-6">
+                <div 
+                    x-show="responseStatus == 'success'" 
+                    x-transition:enter.duration.400ms
+                    x-transition:leave.duration.500ms
+                >
+                    <div class="alert flex flex-row items-center p-5 bg-green-200 border-b-2 border-green-300 rounded-lg shadow-lg">
+                        <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-green-100 border-2 border-green-500 rounded-full">
+                            <span class="text-green-500">
+                                <svg fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="alert-content ml-4">
+                            <div class="alert-title text-lg font-semibold text-green-800">
+                                <span class="font-content" x-text="responseMessage"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div 
+                    x-show="responseStatus == 'error'" 
+                    x-transition:enter.duration.400ms
+                    x-transition:leave.duration.500ms
+                >
+                    <div class="alert flex flex-row items-center p-5 bg-red-200 border-b-2 border-red-300 rounded-lg shadow-lg">
+                        <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-red-100 border-2 border-red-500 rounded-full">
+                            <span class="text-red-500">
+                                <svg fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="alert-content ml-4">
+                            <div class="alert-title text-lg font-semibold text-red-800">
+                                <span class="font-content" x-text="responseMessage"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="relative flex justify-center px-2 mt-6">
-            <a href="#_" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:py-4 md:text-base px-24 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
-                SEND
-            </a>
-        </div>
+            
+            
+            
+        </form>
     </div>
     
 </section>
+
+<style>
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+</style>
+
+<script>
+    function contactForm() {
+        return {
+            formData: {
+                name: '',
+                email: '',
+                message: ''
+            },
+            loading: false,
+            buttonLabel: 'SEND',
+            responseStatus: '',
+            responseMessage: '',
+            show: false,
+
+            hideAlert() {
+                setTimeout(() => this.responseStatus = false, 5000);
+            },
+
+            submitData() {
+                this.buttonLabel = 'SENDING...'
+                this.loading = true;
+
+                fetch('/contact', {
+                    method: 'POST',
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(this.formData)
+                })
+              
+                .then(response => response.json())
+                .then(data => {
+                    this.responseMessage = data.message;
+                    this.responseStatus = data.status;
+
+                    if (this.responseStatus == 'success') {
+                        this.formData = {};
+                    }
+                })
+                .catch((err) => {
+                    console.log(err);
+                    this.responseStatus = 'error';
+                })
+                .finally(() => {
+                    this.loading = false;
+                    this.buttonLabel = 'SEND';
+                    this.show = true;
+                    location.hash = '#contact';
+                })
+            }
+        }
+    }
+  </script>

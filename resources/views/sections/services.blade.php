@@ -1,4 +1,5 @@
-<section id="services" class="w-screen min-h-full overflow-hidden md:px-0 items-center px-2 py-12 mb-10 bg-[#FEFEFE]">
+{{-- <section id="services" class="w-screen min-h-full overflow-hidden md:px-0 items-center px-2 py-12 bg-gradient-to-b from-white to-[#ECECEC]"> --}}
+<section id="services" class="w-screen min-h-screen overflow-hidden md:px-0 items-center px-2 py-12 bg-[#FEFEFE]">
     <h1 class="lg:text-4xl xl:text-5xl mb-12 text-3xl font-extrabold tracking-wider text-center text-[#001E4F]">
         <span class="">SERVICES</span>
     </h1>
@@ -6,17 +7,17 @@
         <div class="sm:-mx-3 flex flex-wrap items-center">
             <div class="md:w-1/2 md:px-3 w-full text-[#001E4F]">
                 <div class="sm:max-w-md lg:max-w-lg md:space-y-3 lg:space-y-4 xl:space-y-5 sm:pr-5 lg:pr-0 md:pb-0 w-full pb-6 space-y-6">
-                    <h2 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-widest">
+                    <h2 class="sm:max-w-md lg:text-xl md:max-w-3xl md:leading-10 mx-auto text-lg leading-normal tracking-widest">
                         {!!  
-                            'Looking for a tailor-made <b>Business Management Software (BMS)</b> or <b>Web Application</b>?'
+                            'Looking for a tailor-made but affordable <b>Business Management Software (BMS)</b> or <b>Web Application</b>?'
                         !!}
                     </h2>
-                    <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-wider">
+                    <h3 class="sm:max-w-md lg:text-lg md:max-w-3xl md:leading-10 mx-auto text-base leading-normal tracking-wider">
                         {!!  
-                            'Which will be created solely according to <b>your business needs</b>?'
+                            'Which will be created solely according to <b>your business</b> needs?'
                         !!}
                     </h3>
-                    <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-wider">
+                    <h3 class="sm:max-w-md lg:text-lg md:max-w-3xl md:leading-10 mx-auto text-base leading-normal tracking-wider">
                         {!!  
                             'Which takes the <b>efficiency</b> and <b>revenue</b> of your business to the next level?'
                         !!}
@@ -122,15 +123,15 @@
                     
                     </div>
                         
-                    <h3 class="sm:max-w-md lg:text-base md:max-w-3xl md:leading-10 mx-auto text-sm leading-normal tracking-widest text-gray-900">
+                    <h3 class="sm:max-w-md lg:text-lg md:max-w-3xl md:leading-10 mx-auto text-base leading-normal tracking-widest text-gray-900">
                         {!!  
                             'in <b>ONE</b> place utilising the <b>latest technologies</b> and equipped with an <b>easy to use</b> and <b>intuitive user interface</b>.'
                         !!}
                     </h3>
                     
                     <div class="md:text-left mt-6 text-center">
-                        <a href="#about" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
-                            ABOUT DEVELOPMAN
+                        <a href="#projects" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
+                            GO TO PROJECTS
                         </a>
                     </div>
             

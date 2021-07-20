@@ -1,4 +1,4 @@
-<section id="projects" class="w-screen min-h-full overflow-hidden md:px-0 px-2 py-12 bg-[#FEFEFE]">
+<section id="projects" class="md:px-0 w-screen min-h-screen px-2 py-12 overflow-hidden bg-[#ECECEC]">
    
     <h1 class="lg:text-4xl xl:text-5xl mb-24 text-3xl font-extrabold tracking-wider text-center text-[#001E4F]">
         <span>PROJECTS</span>
@@ -101,17 +101,13 @@
                                     </div>
                                     <div class="flex items-center justify-center mx-auto">
                                         <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="HTML5 Powered" title="SASS">
-                                        
                                     </div>
                                     <div class="flex items-center justify-center mx-auto">
-                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
+                                        <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg" alt="JQuery Logo" title="JQuery" />
                                     </div>
                                     <div class="flex items-center justify-center mx-auto space-x-1">
                                         <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
                                         <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
-                                    </div>
-                                    <div class="flex items-center justify-center mx-auto">
-                                        <x-svg.icons.livewire />
                                     </div>
                                 </div>
                             </div>
@@ -178,14 +174,11 @@
                                         <img class="h-4" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
                                     </div>
                                     <div class="flex items-center justify-center mx-auto">
-                                        <img class="h-4" src="https://alpinejs.dev/alpine_long.svg" alt="AlpineJS Logo" title="AlpineJS" />
+                                        <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg" alt="JQuery Logo" title="JQuery" />
                                     </div>
                                     <div class="flex items-center justify-center mx-auto space-x-1">
                                         <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
                                         <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
-                                    </div>
-                                    <div class="flex items-center justify-center mx-auto">
-                                        <x-svg.icons.livewire />
                                     </div>
                                 </div>
                             </div>
@@ -241,8 +234,8 @@
             </div>
         </div>
         <div class="md:text-left flex justify-center my-8 text-center">
-            <a href="#contact" type="button" class="transition ripple md:w-auto hover:bg-[#0041aa] hover:shadow-none shadow-lg focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md caret-transparent">
-                CONTACT DEVELOPMAN
+            <a href="#about" type="button" class="transition ripple md:w-auto hover:bg-[#0041aa] hover:shadow-none shadow-lg focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md caret-transparent">
+                ABOUT DEVELOPMAN
             </a>
         </div>
     </div>

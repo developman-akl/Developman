@@ -1,4 +1,4 @@
-<section id="navigation">
+<section id="navigation" class="body-font relative min-h-full text-gray-700 bg-white">
     <div class="items-center w-full px-4 bg-[#0050D16B]">
         <nav class="2xl:max-w-[90vw] z-[999999999] max-w-[95vw] border-1 relative flex items-center justify-between mx-auto space-x-12 text-lg tracking-widest">
             <a href="#navigation">

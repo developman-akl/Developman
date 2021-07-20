@@ -29,10 +29,12 @@ module.exports = {
         extend: {
             opacity: ['disabled'],
         },
+        scrollSnapType: ['responsive'],
     },
 
     plugins: [
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
+        require('tailwindcss-scroll-snap'),
     ],
 };

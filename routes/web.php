@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\RobotsController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,9 +24,10 @@ Route::group([
 
     Route::get('/', function () {
         return view('home');
-    });
+    })->name('home');
 
-    Route::get('sitemap.xml', [SitemapController::class]);
-    Route::get('robots.txt', [RobotsController::class]);
+    Route::post('/contact', [ContactController::class, 'contact'])->name('contact');
+    Route::get('sitemap.xml', [SitemapController::class])->name('sitemap');
+    Route::get('robots.txt', [RobotsController::class])->name('robots');
 
 });

@@ -27,6 +27,7 @@
         "webpack": "^5.45.1"
     },
     "dependencies": {
-        "@tailwindcss/typography": "^0.4.1"
+        "@tailwindcss/typography": "^0.4.1",
+        "tailwindcss-scroll-snap": "^1.1.0"
     }
 }

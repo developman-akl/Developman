@@ -59,28 +59,30 @@
 
             <!-- Page Content -->
             <main>
-                <!-- Section Welcome -->
-                @include('sections.welcome')
+                <div id="section-container">
+                    <!-- Section Welcome -->
+                    @include('sections.welcome')
 
-                <!-- Section Services -->
-                @include('sections.services')
+                    <!-- Section Services -->
+                    @include('sections.services')
 
-                <!-- Section About -->
-                @include('sections.about')
-                
-                <!-- Section Projects -->
-                @include('sections.projects')
-               
-                <!-- Section Contact -->
-                @include('sections.contact')
+                    <!-- Section Projects -->
+                    @include('sections.projects')
+                    
+                    <!-- Section About -->
+                    @include('sections.about')
+                    
+                    <!-- Section Contact -->
+                    @include('sections.contact')
+                </div>
                 
                 <!-- Section Footer -->
                 @include('sections.footer')
 
                 {{-- To the top button --}}
-                <div class="bottom-4 right-2 sm:bottom-8 sm:right-5 fixed" title="Jump to the top" class="bg-white">
+                <div class="bottom-4 right-2 sm:bottom-6 sm:right-5 fixed" title="Jump to the top" class="bg-white">
                     <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#0050D1] text-[#001E4F] bg-white w-14 h-14 rounded-full transform hover:scale-125 duration-700" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#0050D1] text-[#001E4F] bg-white w-16 h-16 rounded-full transform hover:scale-125 duration-700" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>
