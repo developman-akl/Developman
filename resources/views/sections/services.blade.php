@@ -1,11 +1,11 @@
-{{-- <section id="services" class="w-screen min-h-full overflow-hidden md:px-0 items-center px-2 py-12 bg-gradient-to-b from-white to-[#ECECEC]"> --}}
-<section id="services" class="w-screen min-h-screen overflow-hidden md:px-0 items-center px-2 py-12 bg-[#FEFEFE]">
-    <h1 class="lg:text-4xl xl:text-5xl mb-12 text-3xl font-extrabold tracking-wider text-center text-[#001E4F]">
+{{-- <section id="services" class="w-screen min-h-full overflow-hidden md:px-0 items-center px-2 py-12 bg-gradient-to-b from-white to-dvlpmn-gray-dark"> --}}
+<section id="services" class="w-screen min-h-screen overflow-hidden md:px-0 items-center px-2 py-12 bg-dvlpmn-gray-light">
+    <h1 class="lg:text-4xl xl:text-5xl mb-12 text-3xl font-extrabold tracking-wider text-center text-dvlpmn-blue-dark">
         <span class="">SERVICES</span>
     </h1>
     <div class="font-content xl:px-5 md:text-left container items-center max-w-6xl px-8 mx-auto font-semibold text-center">
         <div class="sm:-mx-3 flex flex-wrap items-center">
-            <div class="md:w-1/2 md:px-3 w-full text-[#001E4F]">
+            <div class="md:w-1/2 md:px-3 w-full text-dvlpmn-blue-dark">
                 <div class="sm:max-w-md lg:max-w-lg md:space-y-3 lg:space-y-4 xl:space-y-5 sm:pr-5 lg:pr-0 md:pb-0 w-full pb-6 space-y-6">
                     <h2 class="sm:max-w-md lg:text-xl md:max-w-3xl md:leading-10 mx-auto text-lg leading-normal tracking-widest">
                         {!!  
@@ -130,7 +130,7 @@
                     </h3>
                     
                     <div class="md:text-left mt-6 text-center">
-                        <a href="#projects" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
+                        <a href="#projects" type="button" class="hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-dvlpmn-blue-light inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-dvlpmn-blue-dark border border-transparent rounded-md caret-transparent">
                             GO TO PROJECTS
                         </a>
                     </div>

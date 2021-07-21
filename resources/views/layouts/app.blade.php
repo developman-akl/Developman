@@ -50,7 +50,7 @@
 
     </head>
     <body class="font-body caret-transparent antialiased">
-        <div class="bg-[#FEFEFE] min-h-screen">
+        <div class="bg-dvlpmn-gray-light min-h-screen">
 
             <!-- Page Heading Fixed Nav Bar-->
             <header>
@@ -82,7 +82,7 @@
                 {{-- To the top button --}}
                 <div class="bottom-4 right-2 sm:bottom-6 sm:right-5 fixed" title="Jump to the top" class="bg-white">
                     <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-[#0050D1] text-[#001E4F] bg-white w-16 h-16 rounded-full transform hover:scale-125 duration-700" viewBox="0 0 20 20" fill="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-dvlpmn-blue-light text-dvlpmn-blue-dark hover:scale-125 w-16 h-16 duration-700 transform bg-white rounded-full" viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
                         </svg>
                     </button>

@@ -22,6 +22,14 @@ module.exports = {
             boxShadow: {
                 news: '1px 3px 6px rgba(0, 0, 0, 0.52)'
             },
+            colors: {
+                'dvlp-gray-dark': '#ECECEC',
+                'dvlp-gray-light': '#FEFEFE',
+                'dvlp-blue-dark': '#001E4F',
+                'dvlp-blue-mid': '#0041aa',
+                'dvlp-blue-light': '#0050D1',
+                'dvlp-blue-nav': '#0050D16B',
+            }
         },
     },
 

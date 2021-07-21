@@ -1,6 +1,6 @@
-<section id="projects" class="md:px-0 w-screen min-h-screen px-2 py-12 overflow-hidden bg-[#ECECEC]">
+<section id="projects" class="md:px-0 bg-dvlpmn-gray-dark w-screen min-h-screen px-2 py-12 overflow-hidden">
    
-    <h1 class="lg:text-4xl xl:text-5xl mb-24 text-3xl font-extrabold tracking-wider text-center text-[#001E4F]">
+    <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark mb-24 text-3xl font-extrabold tracking-wider text-center">
         <span>PROJECTS</span>
     </h1>
     
@@ -33,7 +33,7 @@
                 })"
         >
             <div class="absolute inset-y-0 left-0 z-10 flex items-center">
-                <button @click="swiper.slidePrev()" class="hover:text-[#0050D1] transform hover:scale-125 duration-700 lg:-ml-4 text-green focus:outline-none flex items-center justify-center w-10 h-10 -ml-2 bg-white rounded-full shadow text-[#001E4F]">
+                <button @click="swiper.slidePrev()" class="hover:text-dvlpmn-blue-light hover:scale-125 lg:-ml-4 text-green focus:outline-none text-dvlpmn-blue-dark flex items-center justify-center w-10 h-10 -ml-2 duration-700 transform bg-white rounded-full shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
                       </svg>
@@ -265,7 +265,7 @@
             </div>
     
             <div class="absolute inset-y-0 right-0 z-10 flex items-center">
-                <button @click="swiper.slideNext()" class="hover:text-[#0050D1] transform hover:scale-125 duration-700 lg:-mr-4 focus:outline-none text-green flex items-center justify-center w-10 h-10 -mr-2 bg-white rounded-full shadow text-[#001E4F]">
+                <button @click="swiper.slideNext()" class="hover:text-dvlpmn-blue-light hover:scale-125 lg:-mr-4 focus:outline-none text-green text-dvlpmn-blue-dark flex items-center justify-center w-10 h-10 -mr-2 duration-700 transform bg-white rounded-full shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
                     </svg>
@@ -273,7 +273,7 @@
             </div>
         </div>
         <div class="md:text-left flex justify-center my-8 text-center">
-            <a href="#about" type="button" class="transition ripple md:w-auto hover:bg-[#0041aa] hover:shadow-none shadow-lg focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-[#0050D1] border border-transparent rounded-md caret-transparent">
+            <a href="#about" type="button" class="ripple md:w-auto hover:bg-dvlpmn-blue-mid hover:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:px-8 md:py-4 md:text-base bg-dvlpmn-blue-light caret-transparent inline-flex items-center justify-center w-full px-5 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
                 ABOUT DEVELOPMAN
             </a>
         </div>
