@@ -840,6 +840,10 @@ video {
 	left: 0px;
 }.right-0 {
 	right: 0px;
+}.bottom-60 {
+	bottom: 15rem;
+}.bottom-40 {
+	bottom: 10rem;
 }.z-0 {
 	z-index: 0;
 }.z-10 {
@@ -850,6 +854,8 @@ video {
 	z-index: 999999999;
 }.z-50 {
 	z-index: 50;
+}.m-auto {
+	margin: auto;
 }.mx-auto {
 	margin-left: auto;
 	margin-right: auto;
@@ -942,6 +948,8 @@ video {
 	height: content;
 }.h-40 {
 	height: 10rem;
+}.h-full {
+	height: 100%;
 }.h-6 {
 	height: 1.5rem;
 }.h-20 {
@@ -956,8 +964,6 @@ video {
 	height: 0.75rem;
 }.h-screen {
 	height: 100vh;
-}.h-full {
-	height: 100%;
 }.h-8 {
 	height: 2rem;
 }.h-52 {
@@ -1067,6 +1073,8 @@ video {
 	flex-direction: column;
 }.flex-wrap {
 	flex-wrap: wrap;
+}.place-items-center {
+	place-items: center;
 }.items-center {
 	align-items: center;
 }.justify-end {
@@ -1332,6 +1340,8 @@ video {
 	text-align: center;
 }.text-right {
 	text-align: right;
+}.align-middle {
+	vertical-align: middle;
 }.font-content {
 	font-family: Montserrat, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }.font-body {
@@ -1493,6 +1503,21 @@ video {
 	--tw-ring-color: rgba(0, 0, 0, var(--tw-ring-opacity));
 }.ring-opacity-5 {
 	--tw-ring-opacity: 0.05;
+}.backdrop-blur {
+	--tw-backdrop-blur: blur(8px);
+	-webkit-backdrop-filter: var(--tw-backdrop-filter);
+	        backdrop-filter: var(--tw-backdrop-filter);
+}.backdrop-contrast-200 {
+	--tw-backdrop-contrast: contrast(2);
+	-webkit-backdrop-filter: var(--tw-backdrop-filter);
+	        backdrop-filter: var(--tw-backdrop-filter);
+}.backdrop-grayscale {
+	--tw-backdrop-grayscale: grayscale(100%);
+	-webkit-backdrop-filter: var(--tw-backdrop-filter);
+	        backdrop-filter: var(--tw-backdrop-filter);
+}.backdrop-filter {
+	-webkit-backdrop-filter: var(--tw-backdrop-filter);
+	        backdrop-filter: var(--tw-backdrop-filter);
 }.transition {
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;

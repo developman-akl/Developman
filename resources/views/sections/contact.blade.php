@@ -1,5 +1,5 @@
 <!-- This is an example component -->
-<section id="contact" class="md:px-0 relative flex flex-col items-center justify-between w-screen pb-24 bg-[#001E4F]">
+<section x-data="contactForm()" x-ref="contact" id="contact" class="md:px-0 relative flex flex-col items-center justify-between w-screen pb-24 bg-[#001E4F]">
     <div class="absolute top-0 z-0 w-full h-[15%] bg-white"></div>
     <div class="absolute bottom-0 z-0 w-full h-[85%] bg-[#001E4F]"></div>
     <div class="relative top-10 md:w-3/5 lg:w-2/5 w-[90%] h-[content] pt-16 pb-8 mb-8 md:mb-0 bg-[#ECECEC] rounded" style="box-shadow: 8px 5px 10px #00000029;">
@@ -10,7 +10,7 @@
             <span>CONTACT DEVELOPMAN TODAY</span>
         </h2>
         
-        <form action="/contact" method="POST" x-cloak x-data="contactForm()" @submit.prevent="submitData">
+        <form action="/contact" method="POST" x-cloak @submit.prevent="submitData">
             @csrf
             
             <div class="flex flex-col items-center mx-auto">
@@ -26,66 +26,66 @@
             </div>
             
             <div class="relative flex justify-center px-2 mt-6">
-                <button x-text="buttonLabel" @click="hideAlert" :disabled="loading" class="disabled:opacity-50 hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:py-4 md:text-base px-24 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
+                <button x-text="buttonLabel" @click="$refs.contact.scrollIntoView(); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-[#0050D1] focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-[#0050D1] inline-flex items-center uppercase justify-center w-full md:py-4 md:text-base px-24 py-2 text-sm font-bold leading-6 text-white bg-[#001E4F] border border-transparent rounded-md caret-transparent">
                     SEND
                 </button>
             </div>
 
-            <div class="flex items-center justify-center mt-6">
-                <div 
-                    x-show="responseStatus == 'success'" 
-                    x-transition:enter.duration.400ms
-                    x-transition:leave.duration.500ms
-                >
-                    <div class="alert flex flex-row items-center p-5 bg-green-200 border-b-2 border-green-300 rounded-lg shadow-lg">
-                        <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-green-100 border-2 border-green-500 rounded-full">
-                            <span class="text-green-500">
-                                <svg fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    class="w-6 h-6">
-                                    <path fill-rule="evenodd"
-                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="alert-content ml-4">
-                            <div class="alert-title text-lg font-semibold text-green-800">
-                                <span class="font-content" x-text="responseMessage"></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+         
+        </form>
+    </div>
 
-                <div 
-                    x-show="responseStatus == 'error'" 
-                    x-transition:enter.duration.400ms
-                    x-transition:leave.duration.500ms
-                >
-                    <div class="alert flex flex-row items-center p-5 bg-red-200 border-b-2 border-red-300 rounded-lg shadow-lg">
-                        <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-red-100 border-2 border-red-500 rounded-full">
-                            <span class="text-red-500">
-                                <svg fill="currentColor"
-                                    viewBox="0 0 20 20"
-                                    class="w-6 h-6">
-                                    <path fill-rule="evenodd"
-                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                        clip-rule="evenodd"></path>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="alert-content ml-4">
-                            <div class="alert-title text-lg font-semibold text-red-800">
-                                <span class="font-content" x-text="responseMessage"></span>
-                            </div>
+    <div class="absolute mt-2">
+            <div 
+                x-on:click.away="show = false" 
+                x-show="responseStatus == 'success'" 
+                x-transition:enter.duration.400ms
+                x-transition:leave.duration.500ms
+            >
+                <div class="alert flex flex-row items-center p-5 bg-green-200 border-b-2 border-green-300 rounded-lg shadow-lg">
+                    <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-green-100 border-2 border-green-500 rounded-full">
+                        <span class="text-green-500">
+                            <svg fill="currentColor"
+                                viewBox="0 0 20 20"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="alert-content ml-4">
+                        <div class="alert-title text-lg font-semibold text-green-800">
+                            <span class="font-content" x-text="responseMessage"></span>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            
-            
-        </form>
+
+            <div
+                x-show="responseStatus == 'error'" 
+                x-transition:enter.duration.400ms
+                x-transition:leave.duration.500ms
+            >
+                <div class="alert flex flex-row items-center p-5 bg-red-200 border-b-2 border-red-300 rounded-lg shadow-lg">
+                    <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-red-100 border-2 border-red-500 rounded-full">
+                        <span class="text-red-500">
+                            <svg fill="currentColor"
+                                viewBox="0 0 20 20"
+                                class="w-6 h-6">
+                                <path fill-rule="evenodd"
+                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="alert-content ml-4">
+                        <div class="alert-title text-lg font-semibold text-red-800">
+                            <span class="font-content" x-text="responseMessage"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
     
 </section>
@@ -105,14 +105,14 @@
                 email: '',
                 message: ''
             },
+            show: false,
             loading: false,
             buttonLabel: 'SEND',
             responseStatus: '',
             responseMessage: '',
-            show: false,
 
             hideAlert() {
-                setTimeout(() => this.responseStatus = false, 5000);
+                setTimeout(() => this.responseStatus = false, 3500);
             },
 
             submitData() {
@@ -145,7 +145,7 @@
                     this.loading = false;
                     this.buttonLabel = 'SEND';
                     this.show = true;
-                    location.hash = '#contact';
+                    window.location.hash = "#contact";
                 })
             }
         }
