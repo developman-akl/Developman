@@ -49,7 +49,7 @@
         {!! Robots::metaTag() !!}
 
     </head>
-    <body class="font-body caret-transparent antialiased">
+    <body class="font-orbitron caret-transparent antialiased">
         <div class="bg-dvlpmn-gray-light min-h-screen">
 
             <!-- Page Heading Fixed Nav Bar-->

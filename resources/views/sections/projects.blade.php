@@ -51,7 +51,7 @@
                                     <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                    <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                         {!! 'Javasolj!<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
@@ -90,7 +90,7 @@
                                     <img src="{{ asset('storage/images/project_novaerus.jpg') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                    <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                         {!! 'Inventory & Stock Management<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
@@ -127,7 +127,7 @@
                                     <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                    <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                         {!! 'Medical Shoes Manufacturing<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
@@ -161,7 +161,7 @@
                                     <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                    <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                         {!! 'SeiyraDesign<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
@@ -195,7 +195,7 @@
                                     <img src="{{ asset('storage/images/project_developman.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                    <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                         {!! 'Developman website<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
@@ -232,7 +232,7 @@
                                     <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                 </div>
                                 <div class="cursor-help relative px-4 py-2 mt-2 text-center">
-                                    <h2 class="font-content text-lg font-extrabold tracking-normal text-gray-800">
+                                    <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                         {!! 'Bakery Task Manager<br><br>' !!}
                                     </h2>
                                     <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">

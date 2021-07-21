@@ -12,8 +12,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-                body: ['Orbitron', ...defaultTheme.fontFamily.sans],
-                content: ['Montserrat', ...defaultTheme.fontFamily.sans],
+                orbitron: ['Orbitron', ...defaultTheme.fontFamily.sans],
+                montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
             },
             screens: {
                 'portrait': {'raw': '(orientation: portrait)'},

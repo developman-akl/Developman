@@ -26,7 +26,7 @@
             </div>
             
             <div class="relative flex justify-center px-2 mt-6">
-                <button x-text="buttonLabel" @click="$refs.contact.scrollIntoView(); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none shadow-lg transition ripple font-body md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-dvlpmn-blue-light inline-flex items-center uppercase justify-center w-full md:py-4 md:text-base px-24 py-2 text-sm font-bold leading-6 text-white bg-dvlpmn-blue-dark border border-transparent rounded-md caret-transparent">
+                <button x-text="buttonLabel" @click="$refs.contact.scrollIntoView(); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none shadow-lg transition ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-dvlpmn-blue-light inline-flex items-center uppercase justify-center w-full md:py-4 md:text-base px-24 py-2 text-sm font-bold leading-6 text-white bg-dvlpmn-blue-dark border border-transparent rounded-md caret-transparent">
                     SEND
                 </button>
             </div>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="alert-content ml-4">
                         <div class="alert-title text-lg font-semibold text-green-800">
-                            <span class="font-content" x-text="responseMessage"></span>
+                            <span class="font-montserrat" x-text="responseMessage"></span>
                         </div>
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                     </div>
                     <div class="alert-content ml-4">
                         <div class="alert-title text-lg font-semibold text-red-800">
-                            <span class="font-content" x-text="responseMessage"></span>
+                            <span class="font-montserrat" x-text="responseMessage"></span>
                         </div>
                     </div>
                 </div>
