@@ -3113,10 +3113,10 @@ var module_default = src_default;
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/module.esm.js");
-// require('alpinejs');
 
 window.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__.default;
-alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start();
+alpinejs__WEBPACK_IMPORTED_MODULE_0__.default.start(); // import anime from 'animejs/lib/anime.es.js';
+
 var $searchlight = $(".header_city_signal");
 var tl = new TimelineMax();
 tl.fromTo($searchlight, 5, {
@@ -3143,6 +3143,12 @@ $(document).ready(function () {
     });
   });
 });
+$(document).ready(function () {
+  $('#nav-icon2').click(function () {
+    $(this).toggleClass('open');
+  });
+}); // var spanWidth = $('#text span').width();
+// $('#text').animate( { width: spanWidth }, 3000 );
 
 /***/ }),
 

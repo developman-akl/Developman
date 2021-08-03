@@ -1,6 +1,6 @@
 <section id="projects" class="md:px-0 bg-dvlpmn-gray-dark w-screen min-h-screen px-2 py-12 overflow-hidden">
    
-    <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark mb-24 text-3xl font-extrabold tracking-wider text-center">
+    <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark lg:mb-24 mb-6 text-3xl font-extrabold tracking-wider text-center">
         <span>PROJECTS</span>
     </h1>
     
@@ -33,7 +33,7 @@
                 })"
         >
             <div class="absolute inset-y-0 left-0 z-10 flex items-center">
-                <button @click="swiper.slidePrev()" class="hover:text-dvlpmn-blue-light hover:scale-125 lg:-ml-4 text-green focus:outline-none text-dvlpmn-blue-dark flex items-center justify-center w-10 h-10 -ml-2 duration-700 transform bg-white rounded-full shadow">
+                <button @click="swiper.slidePrev()" class="hover:text-dvlpmn-blue-light hover:scale-125 hover:-translate-x-2 lg:-ml-4 text-green focus:outline-none text-dvlpmn-blue-dark flex items-center justify-center w-10 h-10 -ml-2 duration-700 transform bg-white rounded-full shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" />
                       </svg>
@@ -44,7 +44,7 @@
                 <div class="swiper-wrapper">
                     
                     {{-- Javasolj! --}}
-                    <div class="swiper-slide p-1 transition duration-1000">
+                    <a href="{{ route('projects.1') }}" class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
@@ -78,12 +78,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </a>  
 
                     
 
                     {{-- BMS --}}
-                    <div class="swiper-slide p-1 transition duration-1000">
+                    <a href="{{ route('projects.2') }}" class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
@@ -117,10 +117,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </a> 
 
                     {{-- Manufacturing --}}
-                    <div class="swiper-slide p-1 transition duration-1000">
+                    <a href="{{ route('projects.3') }}" class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
@@ -151,10 +151,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </a> 
 
                     {{-- SeiyraDesign --}}
-                    <div class="swiper-slide p-1 transition duration-1000">
+                    <a href="{{ route('projects.4') }}" class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
@@ -185,10 +185,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </a>  
 
                     {{-- Developman --}}
-                    <div class="swiper-slide p-1 transition duration-1000">
+                    <a href="{{ route('projects.5') }}" class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
@@ -222,10 +222,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </a>  
 
                     {{-- Task Manager --}}
-                    <div class="swiper-slide p-1 transition duration-1000">
+                    <a href="{{ route('projects.6') }}" class="swiper-slide p-1 transition duration-1000">
                         <div class="max-w-2xl p-2 mx-auto">
                             <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                 <div class="md:flex-shrink-0 border-b">
@@ -259,13 +259,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>  
+                    </a>  
                     
                 </div>
             </div>
     
             <div class="absolute inset-y-0 right-0 z-10 flex items-center">
-                <button @click="swiper.slideNext()" class="hover:text-dvlpmn-blue-light hover:scale-125 lg:-mr-4 focus:outline-none text-green text-dvlpmn-blue-dark flex items-center justify-center w-10 h-10 -mr-2 duration-700 transform bg-white rounded-full shadow">
+                <button @click="swiper.slideNext()" class="hover:text-dvlpmn-blue-light hover:scale-125 hover:translate-x-2 lg:-mr-4 focus:outline-none text-green text-dvlpmn-blue-dark flex items-center justify-center w-10 h-10 -mr-2 duration-700 transform bg-white rounded-full shadow">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" viewBox="0 0 20 20" fill="currentColor">
                         <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
                     </svg>

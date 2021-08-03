@@ -12,10 +12,13 @@ const mix = require('laravel-mix');
  */
 
 mix
-    .js('resources/js/app.js', 'public/js');
+    .js('resources/js/app.js', 'public/js')
+    .js('resources/js/blob.js', 'public/js')
+;
     
 mix
-    .sass('resources/sass/app.scss', 'public/css');
+    .sass('resources/sass/app.scss', 'public/css')
+;
     
 mix
     .postCss('resources/css/tailwind.css', 'public/css')
@@ -25,4 +28,5 @@ mix
             require('tailwindcss'),
             require('autoprefixer'),
         ],
-    });
+    })
+;

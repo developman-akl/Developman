@@ -1,4 +1,4 @@
-<section id="welcome" class="header-background relative flex flex-col justify-between h-screen pb-4">
+<section id="welcome" class="gradient-background relative flex flex-col justify-between h-screen pb-4">
 
     <!-- Main Hero Content -->
     <div class="px-4 pt-10 2xl:ml-[4.6%] ml-[3%] text-left">
@@ -15,7 +15,7 @@
             </h1>
             
             <div class="md:block absolute text-left">
-                <a href="#services" type="button" class="transition ripple md:w-auto hover:bg-dvlpmn-blue-mid hover:shadow-none shadow-lg focus:outline-none focus:ring-2 tracking-widest focus:ring-offset-2 focus:ring-dvlpmn-blue-light inline-flex items-center uppercase justify-center w-full md:px-8 md:py-4 md:text-base px-5 py-2 text-sm font-bold leading-6 text-white bg-dvlpmn-blue-light border border-transparent rounded-md caret-transparent">
+                <a href="#services" type="button" class="ripple md:w-auto hover:bg-dvlpmn-blue-mid hover:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:px-8 md:py-4 md:text-base bg-dvlpmn-blue-light caret-transparent inline-flex items-center justify-center w-full px-5 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
                     Learn More
                 </a>
             </div>

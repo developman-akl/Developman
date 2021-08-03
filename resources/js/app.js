@@ -1,10 +1,9 @@
-// require('alpinejs');
-
 import Alpine from 'alpinejs'
-
 window.Alpine = Alpine
-
 Alpine.start()
+
+// import anime from 'animejs/lib/anime.es.js';
+
 
 var $searchlight = $(".header_city_signal");
 var tl = new TimelineMax();
@@ -20,5 +19,13 @@ $(document).ready(function () {
             });
         });
     });
-
 });
+
+$(document).ready(function(){
+	$('#nav-icon2').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+
+// var spanWidth = $('#text span').width();
+// $('#text').animate( { width: spanWidth }, 3000 );
