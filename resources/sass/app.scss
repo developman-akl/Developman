@@ -11,6 +11,11 @@ body {
     position: relative;
 }
 
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
 .scrollbar-thumb {
     background-color: rgb(143, 143, 143);
 }
@@ -19,23 +24,6 @@ body {
     background-color: transparent;
 }
 
-// #section-container {
-//     @media (min-width: 1300px) {
-//         overflow: scroll;
-//         height: 100vh;
-//         scroll-snap-type: mandatory;
-//         scroll-snap-points-y: repeat(100vh);
-//         scroll-snap-type: y mandatory;
-//     }
-
-//     section:not(footer) {
-//         @media (min-width: 1300px) {
-//             height: 100%;
-//             scroll-snap-align: start;
-//             position: relative;
-//         }
-//     }
-// }
 
 .gradient-background {
     background: transparent linear-gradient(180deg, #0050D16B 0%, #FFFFFF54 100%) 0% 0% no-repeat padding-box;
@@ -456,3 +444,22 @@ body {
     left: 8px;
   }
 
+  .text-fade-in  {
+    position: relative;
+    font-weight: 900;
+  }
+  
+  .text-fade-in  .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .text-fade-in  .letter {
+    display: inline-block;
+    line-height: 1em;
+    transform-origin: 0 0;
+  }

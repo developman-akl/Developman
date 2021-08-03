@@ -10,6 +10,11 @@ body {
   position: relative;
 }
 
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 .scrollbar-thumb {
   background-color: #8f8f8f;
 }
@@ -395,4 +400,24 @@ body {
   transform: rotate(-45deg);
   top: 39px;
   left: 8px;
+}
+
+.text-fade-in {
+  position: relative;
+  font-weight: 900;
+}
+
+.text-fade-in .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.text-fade-in .letter {
+  display: inline-block;
+  line-height: 1em;
+  transform-origin: 0 0;
 }

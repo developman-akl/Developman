@@ -27,6 +27,7 @@
         "webpack": "^5.45.1"
     },
     "dependencies": {
+        "@alpinejs/intersect": "^3.2.2",
         "@tailwindcss/typography": "^0.4.1",
         "animejs": "^3.2.1",
         "tailwindcss-scroll-snap": "^1.1.0"

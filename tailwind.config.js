@@ -20,7 +20,8 @@ module.exports = {
                 'landscape': {'raw': '(orientation: landscape)'},
             },
             boxShadow: {
-                news: '1px 3px 6px rgba(0, 0, 0, 0.52)'
+                news: '1px 3px 6px rgba(0, 0, 0, 0.52)',
+                contact: '8px 5px 10px #00000029;',
             },
             colors: {
                 'dvlpmn-gray-dark': '#ECECEC',

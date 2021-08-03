@@ -1,5 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/blob.js": "/js/blob.js",
     "/css/tailwind.css": "/css/tailwind.css",
     "/css/app.css": "/css/app.css"
 }

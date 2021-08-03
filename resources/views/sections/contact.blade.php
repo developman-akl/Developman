@@ -1,108 +1,141 @@
-<!-- This is an example component -->
-<section x-data="contactForm()" x-ref="contact" id="contact" class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-between w-screen pb-24">
-    <div class="absolute top-0 z-0 w-full h-[15%] bg-white"></div>
-    <div class="absolute bottom-0 z-0 w-full h-[85%] bg-dvlpmn-blue-dark"></div>
-    <div class="relative top-10 md:w-3/5 lg:w-2/5 w-[90%] h-[content] pt-16 pb-8 mb-8 md:mb-0 bg-dvlpmn-gray-dark rounded" style="box-shadow: 8px 5px 10px #00000029;">
-        <h1 class="lg:text-4xl xl:text-5xl lg:mb-24 text-dvlpmn-blue-dark mb-6 text-3xl font-extrabold tracking-wider text-center">
-            <span>CONTACT</span>
-        </h1>
-        <h2 class=" md:text-base lg:text-lg xl:text-xl 2xl:mb-12 text-dvlpmn-blue-light mb-0 text-sm font-extrabold tracking-wider text-center">
-            <span>CONTACT DEVELOPMAN TODAY</span>
-        </h2>
-        
-        <form action="/contact" method="POST" x-cloak @submit.prevent="submitData">
-            @csrf
-            
-            <div class="flex flex-col items-center mx-auto">
-                <div class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700">
-                    <input type="text" name="name" x-model="formData.name" placeholder="Name" autocomplete="on" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
-                </div>
-                <div class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700">
-                    <input type="email" name="email" x-model="formData.email" placeholder="Email" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
-                </div>
-                <div class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700">
-                    <textarea name="message" x-model="formData.message" rows="10" cols="50" class="md:text-left caret-black bg-dvlpmn-gray-dark focus:outline-none placeholder-dvlpmn-blue-light w-full h-40 py-3 pl-5 text-center placeholder-opacity-75 border-0" placeholder="Message"></textarea>
-                </div>
-            </div>
-            
-            <div class="relative flex justify-center px-2 mt-6">
-                <button x-text="buttonLabel" @click="$refs.contact.scrollIntoView(); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
-                    SEND
-                </button>
-            </div>
-
-            <a href="mailto:info@developman.tech" target="_blank">
-                <p class="hover:text-dvlpmn-blue-light hover:underline text-dvlpmn-blue-dark justify-center mt-6 text-lg font-bold text-center transition duration-500" >
-                    info@developman.tech
-                </p>
-            </a>
-         
-        </form>
-    </div>
-
-    <div class="absolute mt-2">
-            <div 
-                x-on:click.away="show = false" 
-                x-show="responseStatus == 'success'" 
-                x-transition:enter.duration.400ms
-                x-transition:leave.duration.500ms
+<section id="contact">
+    <div
+        x-data="contactForm()" 
+        x-ref="contact" 
+        x-intersect.once="showAnimation = true"
+        class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-between w-screen pb-24"
+    >
+        <div class="absolute top-0 z-0 w-full h-[15%] bg-white"></div>
+        <div class="absolute bottom-0 z-0 w-full h-[85%] bg-dvlpmn-blue-dark"></div>
+        <div class="relative top-10 md:w-3/5 lg:w-2/5 w-[90%] h-[content] pt-16 pb-8 mb-8 md:mb-0 bg-dvlpmn-gray-dark rounded shadow-contact">
+            <h1 
+                x-cloak 
+                x-show="showAnimation" 
+                x-transition.duration.1500ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.top
+                class="lg:text-4xl xl:text-5xl lg:mb-24 text-dvlpmn-blue-dark mb-6 text-3xl font-extrabold tracking-wider text-center"
             >
-                <div class="alert flex flex-row items-center p-5 bg-green-200 border-b-2 border-green-300 rounded-lg shadow-lg">
-                    <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-green-100 border-2 border-green-500 rounded-full">
-                        <span class="text-green-500">
-                            <svg fill="currentColor"
-                                viewBox="0 0 20 20"
-                                class="w-6 h-6">
-                                <path fill-rule="evenodd"
-                                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </span>
+                <span>CONTACT</span>
+            </h1>
+            <h2 
+                x-cloak 
+                x-show="showAnimation" 
+                x-transition.duration.1500ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
+                class=" md:text-base lg:text-lg xl:text-xl 2xl:mb-12 text-dvlpmn-blue-light mb-0 text-sm font-extrabold tracking-wider text-center"
+            >
+                <span>CONTACT DEVELOPMAN TODAY</span>
+            </h2>
+            
+            <form action="/contact" method="POST" x-cloak @submit.prevent="submitData">
+                @csrf
+                
+                <div class="flex flex-col items-center mx-auto">
+                    <div 
+                        x-cloak 
+                        x-show="showAnimation"
+                        x-transition.duration.1500ms.delay.350ms.opacity.enter.scale.10.leave.scale.60.origin.right
+                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
+                    >
+                        <input type="text" name="name" x-model="formData.name" placeholder="Name" autocomplete="on" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
                     </div>
-                    <div class="alert-content ml-4">
-                        <div class="alert-title text-lg font-semibold text-green-800">
-                            <span class="font-montserrat" x-text="responseMessage"></span>
+                    <div 
+                        x-cloak 
+                        x-show="showAnimation"
+                        x-transition.duration.1500ms.delay.450ms.opacity.enter.scale.10.leave.scale.60.origin.right
+                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
+                    >
+                        <input type="email" name="email" x-model="formData.email" placeholder="Email" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
+                    </div>
+                    <div 
+                        x-cloak 
+                        x-show="showAnimation"
+                        x-transition.duration.1500ms.delay.550ms.opacity.enter.scale.10.leave.scale.60.origin.right
+                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
+                    >
+                        <textarea name="message" x-model="formData.message" rows="10" cols="50" class="md:text-left caret-black bg-dvlpmn-gray-dark focus:outline-none placeholder-dvlpmn-blue-light w-full h-40 py-3 pl-5 text-center placeholder-opacity-75 border-0" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                
+                <div 
+                    x-cloak 
+                    x-show="showAnimation" 
+                    x-transition.duration.1500ms.delay.1000ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
+                    class="relative flex justify-center px-2 mt-6"
+                >
+                    <button x-text="buttonLabel" @click="$refs.contact.scrollIntoView(); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
+                        SEND
+                    </button>
+                </div>
+
+                <a 
+                    x-cloak 
+                    x-show="showAnimation" 
+                    x-transition.duration.1500ms.delay.1000ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
+                    href="mailto:info@developman.tech" 
+                    target="_blank"
+                >
+                    <p class="hover:text-dvlpmn-blue-light hover:underline text-dvlpmn-blue-dark justify-center mt-6 text-lg font-bold text-center transition duration-500" >
+                        info@developman.tech
+                    </p>
+                </a>
+            
+            </form>
+        </div>
+
+        <div class="absolute mt-2">
+                <div x-cloak 
+                    x-on:click.away="show = false" 
+                    x-show="responseStatus == 'success'" 
+                    x-transition:enter.duration.400ms
+                    x-transition:leave.duration.500ms
+                >
+                    <div class="alert flex flex-row items-center p-5 bg-green-200 border-b-2 border-green-300 rounded-lg shadow-lg">
+                        <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-green-100 border-2 border-green-500 rounded-full">
+                            <span class="text-green-500">
+                                <svg fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="alert-content ml-4">
+                            <div class="alert-title text-lg font-semibold text-green-800">
+                                <span class="font-montserrat" x-text="responseMessage"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div
-                x-show="responseStatus == 'error'" 
-                x-transition:enter.duration.400ms
-                x-transition:leave.duration.500ms
-            >
-                <div class="alert flex flex-row items-center p-5 bg-red-200 border-b-2 border-red-300 rounded-lg shadow-lg">
-                    <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-red-100 border-2 border-red-500 rounded-full">
-                        <span class="text-red-500">
-                            <svg fill="currentColor"
-                                viewBox="0 0 20 20"
-                                class="w-6 h-6">
-                                <path fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="alert-content ml-4">
-                        <div class="alert-title text-lg font-semibold text-red-800">
-                            <span class="font-montserrat" x-text="responseMessage"></span>
+                <div x-cloak 
+                    x-on:click.away="show = false" 
+                    x-show="responseStatus == 'error'" 
+                    x-transition:enter.duration.400ms
+                    x-transition:leave.duration.500ms
+                >
+                    <div class="alert flex flex-row items-center p-5 bg-red-200 border-b-2 border-red-300 rounded-lg shadow-lg">
+                        <div class="alert-icon flex items-center justify-center flex-shrink-0 w-10 h-10 bg-red-100 border-2 border-red-500 rounded-full">
+                            <span class="text-red-500">
+                                <svg fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                    class="w-6 h-6">
+                                    <path fill-rule="evenodd"
+                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="alert-content ml-4">
+                            <div class="alert-title text-lg font-semibold text-red-800">
+                                <span class="font-montserrat" x-text="responseMessage"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+        </div>
     </div>
-    
 </section>
-
-@push('styles')
-<style>
-    button:disabled {
-      cursor: not-allowed;
-      opacity: 0.5;
-    }
-</style>
-@endpush
 
 @push('scripts')
 <script>
@@ -113,6 +146,7 @@
                 email: '',
                 message: ''
             },
+            showAnimation: false,
             show: false,
             loading: false,
             buttonLabel: 'SEND',

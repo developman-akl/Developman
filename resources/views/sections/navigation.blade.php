@@ -7,30 +7,28 @@
 
             <button id="mobileMenuButton" class="focus:outline-none lg:hidden py-3 text-gray-900" title="Open side menu">
                 <div id="nav-icon2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span><span></span><span></span><span></span>
                 </div>
             </button>
 
             <!-- List of nav item -->
+            @php
+                $backSlash = strpos(Route::currentRouteName(), 'projects') === 0 ? '/' : '';
+            @endphp
             <div 
                 id="sideMenuHideOnMobile"
                 class="lg:mt-4 lg:w-auto lg:px-4 lg:flex-row lg:translate-y-0 lg:inline-flex lg:items-center lg:mx-1 lg:uppercase border-1 lg:shadow-none text-dvlpmn-blue-light bg-white/90 lg:bg-transparent duration-50 absolute top-0 right-0 z-10 flex flex-col w-auto pl-4 pr-10 font-extrabold transition-all transform translate-x-0 -translate-y-full border-gray-900 rounded-md shadow-lg"
             >
-                <a href="{{ strpos(Route::currentRouteName(), 'projects') === 0 ? '/' : '' }}#services" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="{{ $backSlash }}#services" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     SERVICES
                 </a>
-                <a href="{{ strpos(Route::currentRouteName(), 'projects') === 0 ? '/' : '' }}#about" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
-                    ABOUT
-                </a>
-                <a href="{{ strpos(Route::currentRouteName(), 'projects') === 0 ? '/' : '' }}#projects" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="{{ $backSlash }}#projects" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     PROJECTS
                 </a>
-                <a href="{{ strpos(Route::currentRouteName(), 'projects') === 0 ? '/' : '' }}#contact" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                <a href="{{ $backSlash }}#about" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
+                    ABOUT
+                </a>
+                <a href="{{ $backSlash }}#contact" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 transition-all duration-500 border-b-2 border-transparent">
                     CONTACT
                 </a>
             </div>
