@@ -49,16 +49,17 @@
                     
                 </div>
             </div>
-            <div 
-                x-cloak
-                x-show="shown"
-                x-transition.duration.1000ms.delay.300ms.opacity.enter.scale.10.leave.scale.50.origin.bottom
-                class="md:text-left lg:my-10 flex items-center justify-center my-auto text-center"
-            >
-                <a href="#contact" type="button" class="ripple font-orbitron lg:my-10 md:w-auto hover:bg-dvlpmn-blue-light hover:shadow-none hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:px-8 md:py-4 md:text-base text-dvlpmn-blue-light border-dvlpmn-blue-light caret-transparent inline-flex items-center justify-center w-full px-5 py-2 my-auto text-sm font-bold leading-6 tracking-widest uppercase transition bg-white border-2 rounded-md shadow-lg">
-                    CONTACT DEVELOPMAN
-                </a>
-            </div>
+           
+        </div>
+        <div 
+            x-cloak
+            x-show="shown"
+            x-transition.duration.1000ms.delay.300ms.opacity.enter.scale.10.leave.scale.50.origin.bottom
+            class="md:text-left lg:my-10 flex items-center justify-center my-auto text-center"
+        >
+            <a href="#contact" type="button" class="ripple font-orbitron lg:my-10 md:w-auto hover:bg-dvlpmn-blue-light hover:shadow-none hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:px-8 md:py-4 md:text-base text-dvlpmn-blue-light border-dvlpmn-blue-light caret-transparent inline-flex items-center justify-center w-full px-5 py-2 my-auto text-sm font-bold leading-6 tracking-widest uppercase transition bg-white border-2 rounded-md shadow-lg">
+                CONTACT DEVELOPMAN
+            </a>
         </div>
     </div>
 </section>
