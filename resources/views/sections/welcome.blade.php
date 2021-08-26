@@ -2,7 +2,7 @@
     <div
         x-data="{ shown_welcome: false }" 
         x-intersect.once="shown_welcome = true"
-        class="gradient-background relative flex flex-col justify-between min-h-[90vh] lg:min-h-screen h-auto"
+        class="gradient-background relative flex flex-col justify-between min-h-[85vh] lg:min-h-screen h-auto"
     >
         <!-- Main Hero Content -->
         <div class="px-4 pt-10 2xl:ml-[4.6%] ml-[3%] text-left">
