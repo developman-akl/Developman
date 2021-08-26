@@ -58,7 +58,7 @@
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
-                                        <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
+                                        <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="Javasolj! image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
                                     <div class="cursor-help md:h-[180px] h-auto relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
@@ -135,7 +135,7 @@
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
-                                        <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
+                                        <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="Medical Shoes Manufacturing image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
                                     <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
@@ -170,7 +170,7 @@
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
-                                        <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
+                                        <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="SeiyraDesign image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
                                     <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
@@ -205,7 +205,7 @@
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
-                                        <img src="{{ asset('storage/images/project_developman.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
+                                        <img src="{{ asset('storage/images/project_developman.png') }}" alt="Developman image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
                                     <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
@@ -243,7 +243,7 @@
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
-                                        <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
+                                        <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="Bakery Task Manager image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
                                     <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
