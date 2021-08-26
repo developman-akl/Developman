@@ -49,7 +49,7 @@
         {!! Robots::metaTag() !!}
 
     </head>
-    <body class="font-orbitron caret-transparent antialiased" x-data >
+    <body x-data="{ showToTopBtn: false }" x-cloak class="font-orbitron caret-transparent antialiased"  >
         
         <!-- Page Heading Fixed Nav Bar-->
         <header>
@@ -59,8 +59,8 @@
         @yield('content')
 
         {{-- To the top button --}}
-        <div class="bottom-4 right-2 sm:bottom-6 sm:right-5 fixed z-10" title="Jump to the top" class="bg-white">
-            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" aria-label="To the top button">
+        <div class="bottom-12 right-2 sm:bottom-6 sm:right-5 hover:opacity-100 fixed z-10 opacity-50">
+            <button x-show="showToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});" aria-label="To the top button" title="Jump to the top">
                 <svg xmlns="http://www.w3.org/2000/svg" class="hover:text-dvlpmn-blue-light text-dvlpmn-blue-dark hover:scale-125 hover:-translate-y-2.5 w-16 h-16 duration-700 transform bg-white rounded-full" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 0l-3 3a1 1 0 001.414 1.414L9 9.414V13a1 1 0 102 0V9.414l1.293 1.293a1 1 0 001.414-1.414z" clip-rule="evenodd" />
                 </svg>

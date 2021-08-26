@@ -17,7 +17,7 @@
         </div>
 
         <div class="flex flex-col space-y-10">
-            <div class="sm:mt-0 sm:text-left mt-8 font-black tracking-wider text-center uppercase">
+            <div class="sm:mt-0 sm:text-left sm:flex-row flex flex-col mt-8 font-black tracking-wider text-center uppercase">
                 <span class="text-dvlpmn-blue-light">Custom Solutions,</span>
                 <span class="text-dvlpmn-blue-dark">Outstanding Results.</span>
             </div>

@@ -1,1 +1,337 @@
-({431:function(){var e=this;function n(e,n){for(var t=0;t<n.length;t++){var r=n[t];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(e,r.key,r)}}var t=function(){function e(n,t){!function(e,n){if(!(e instanceof n))throw new TypeError("Cannot call a class as a function")}(this,e),this.DOM={},this.DOM.el=n,this.options={},Object.assign(this.options,t),this.init()}var t,r,i;return t=e,(r=[{key:"init",value:function(){var e,n,t,r,i=this;this.rect=this.DOM.el.getBoundingClientRect(),this.descriptions=[],this.layers=Array.from(this.DOM.el.querySelectorAll("path"),(function(e){return e.style.transformOrigin="".concat(i.rect.left+i.rect.width/2,"px ").concat(i.rect.top+i.rect.height/2,"px"),e.style.opacity=0,i.descriptions.push(e.getAttribute("d")),e})),window.addEventListener("resize",(e=function(){i.rect=i.DOM.el.getBoundingClientRect(),i.layers.forEach((function(e){return e.style.transformOrigin="".concat(i.rect.left+i.rect.width/2,"px ").concat(i.rect.top+i.rect.height/2,"px")}))},n=20,function(){var i=this,o=arguments,a=function(){r=null,t||e.apply(i,o)},c=t&&!r;clearTimeout(r),r=setTimeout(a,n),c&&e.apply(i,o)}))}},{key:"intro",value:function(){anime.remove(this.layers),anime({targets:this.layers,duration:1800,delay:function(e,n){return 120*n},easing:[.2,1,.1,1],scale:[.2,1],opacity:{value:[0,1],duration:300,delay:function(e,n){return 120*n},easing:"linear"}})}},{key:"expand",value:function(){var e=this;return new Promise((function(n,t){var r=!1;anime({targets:e.layers,duration:1e3,delay:function(e,n){return 50*n+200},easing:[.8,0,.1,0],d:function(e){return e.getAttribute("pathdata:id")},update:function(e){e.progress>75&&!r&&(r=!0,n())}})}))}},{key:"collapse",value:function(){var e=this;return new Promise((function(n,t){var r=!1;anime({targets:e.layers,duration:800,delay:function(e,n,t){return 50*(t-n-1)+400},easing:[.2,1,.1,1],d:function(n,t){return e.descriptions[t]},update:function(e){e.progress>75&&!r&&(r=!0,n())}})}))}},{key:"hide",value:function(){anime.remove(this.layers),anime({targets:this.layers,duration:800,delay:function(e,n,t){return 80*(t-n-1)},easing:"easeInOutExpo",scale:0,opacity:{value:0,duration:500,delay:function(e,n,t){return 80*(t-n-1)},easing:"linear"}})}},{key:"show",value:function(){var e=this;setTimeout((function(){return e.intro()}),400)}}])&&n(t.prototype,r),i&&n(t,i),e}();window.Blob=t;var r,i={},o=[];i.svg=document.querySelector("svg.scene"),Array.from(i.svg.querySelectorAll("g")).forEach((function(e){var n=new t(e);o.push(n),n.intro()})),i.content=document.querySelector(".content--reveal"),i.contentInner=Array.from(i.content.querySelectorAll(".content__inner"),(function(e){return charming(e),e})),i.ctrlBack=i.content.querySelector(".content__close"),i.links=Array.from(document.querySelectorAll(".menu > .menu__item")),i.links.forEach((function(e,n){e.style.pointerEvents="none",charming(e),anime({targets:e.querySelectorAll("span"),duration:800,delay:function(e,n){return anime.random(0,600)+500},easing:"easeInOutQuad",opacity:[0,1],complete:function(){e.style.pointerEvents="auto",e.classList.add("menu__item--showDeco")}}),e.addEventListener("click",(function(e){e.preventDefault(),a(n)}))})),i.ctrlBack.addEventListener("click",(function(){return c()}));var a=function(n){e.isOpen=!0,anime({targets:i.links.map((function(e){return e.querySelectorAll("span")})),delay:function(e,n){return anime.random(0,300)},duration:200,easing:"easeInOutQuad",opacity:0,begin:function(){return i.links.forEach((function(e){e.style.pointerEvents="none",e.classList.remove("menu__item--showDeco")}))}});var t=o[r=n];t.expand().then((function(){i.content.style.pointerEvents="auto";var e=i.contentInner[n];e.style.opacity=1,anime({targets:[e.querySelectorAll(".content__title > span"),e.querySelectorAll(".content__subtitle > span"),i.ctrlBack],duration:200,delay:function(e,n){return anime.random(0,600)},easing:"easeInOutQuad",opacity:[0,1]})})),o.filter((function(e){return e!=t})).forEach((function(e){return e.hide()}))},c=function(){if(e.isOpen){e.isOpen=!1;var n=i.contentInner[r];anime({targets:[n.querySelectorAll(".content__title > span"),n.querySelectorAll(".content__subtitle > span"),i.ctrlBack],delay:function(e,n){return anime.random(0,300)},duration:200,easing:"easeInOutQuad",opacity:0,complete:function(){n.style.opacity=0,i.content.style.pointerEvents="none"}}),o[r].collapse().then((function(){r=-1,anime({targets:i.links.map((function(e){return e.querySelectorAll("span")})),duration:200,delay:function(e,n){return anime.random(0,600)},easing:"easeInOutQuad",opacity:1,complete:function(){return i.links.forEach((function(e){e.style.pointerEvents="auto",e.classList.add("menu__item--showDeco")}))}})})),o.filter((function(e){return e!=o[r]})).forEach((function(e){return e.show()}))}}}})[431]();
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./resources/js/blob.js":
+/*!******************************!*\
+  !*** ./resources/js/blob.js ***!
+  \******************************/
+/***/ (function() {
+
+var _this5 = this;
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+// **
+//  * blob.js
+//  * http://www.codrops.com
+//  *
+//  * Licensed under the MIT license.
+//  * http://www.opensource.org/licenses/mit-license.php
+//  * 
+//  * Copyright 2018, Codrops
+//  * http://www.codrops.com
+//  */
+{
+  // From https://davidwalsh.name/javascript-debounce-function.
+  var debounce = function debounce(func, wait, immediate) {
+    var timeout;
+    return function () {
+      var context = this,
+          args = arguments;
+
+      var later = function later() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  ;
+
+  var Blob = /*#__PURE__*/function () {
+    function Blob(el, options) {
+      _classCallCheck(this, Blob);
+
+      this.DOM = {};
+      this.DOM.el = el;
+      this.options = {};
+      Object.assign(this.options, options);
+      this.init();
+    }
+
+    _createClass(Blob, [{
+      key: "init",
+      value: function init() {
+        var _this = this;
+
+        this.rect = this.DOM.el.getBoundingClientRect();
+        this.descriptions = [];
+        this.layers = Array.from(this.DOM.el.querySelectorAll('path'), function (t) {
+          t.style.transformOrigin = "".concat(_this.rect.left + _this.rect.width / 2, "px ").concat(_this.rect.top + _this.rect.height / 2, "px");
+          t.style.opacity = 0;
+
+          _this.descriptions.push(t.getAttribute('d'));
+
+          return t;
+        });
+        window.addEventListener('resize', debounce(function () {
+          _this.rect = _this.DOM.el.getBoundingClientRect();
+
+          _this.layers.forEach(function (layer) {
+            return layer.style.transformOrigin = "".concat(_this.rect.left + _this.rect.width / 2, "px ").concat(_this.rect.top + _this.rect.height / 2, "px");
+          });
+        }, 20));
+      }
+    }, {
+      key: "intro",
+      value: function intro() {
+        anime.remove(this.layers);
+        anime({
+          targets: this.layers,
+          duration: 1800,
+          delay: function delay(t, i) {
+            return i * 120;
+          },
+          easing: [0.2, 1, 0.1, 1],
+          scale: [0.2, 1],
+          opacity: {
+            value: [0, 1],
+            duration: 300,
+            delay: function delay(t, i) {
+              return i * 120;
+            },
+            easing: 'linear'
+          }
+        });
+      }
+    }, {
+      key: "expand",
+      value: function expand() {
+        var _this2 = this;
+
+        return new Promise(function (resolve, reject) {
+          var halfway = false;
+          anime({
+            targets: _this2.layers,
+            duration: 1000,
+            delay: function delay(t, i) {
+              return i * 50 + 200;
+            },
+            easing: [0.8, 0, 0.1, 0],
+            d: function d(t) {
+              return t.getAttribute('pathdata:id');
+            },
+            update: function update(anim) {
+              if (anim.progress > 75 && !halfway) {
+                halfway = true;
+                resolve();
+              }
+            }
+          });
+        });
+      }
+    }, {
+      key: "collapse",
+      value: function collapse() {
+        var _this3 = this;
+
+        return new Promise(function (resolve, reject) {
+          var halfway = false;
+          anime({
+            targets: _this3.layers,
+            duration: 800,
+            delay: function delay(t, i, total) {
+              return (total - i - 1) * 50 + 400;
+            },
+            easing: [0.2, 1, 0.1, 1],
+            d: function d(t, i) {
+              return _this3.descriptions[i];
+            },
+            update: function update(anim) {
+              if (anim.progress > 75 && !halfway) {
+                halfway = true;
+                resolve();
+              }
+            }
+          });
+        });
+      }
+    }, {
+      key: "hide",
+      value: function hide() {
+        anime.remove(this.layers);
+        anime({
+          targets: this.layers,
+          duration: 800,
+          delay: function delay(t, i, total) {
+            return (total - i - 1) * 80;
+          },
+          easing: 'easeInOutExpo',
+          scale: 0,
+          opacity: {
+            value: 0,
+            duration: 500,
+            delay: function delay(t, i, total) {
+              return (total - i - 1) * 80;
+            },
+            easing: 'linear'
+          }
+        });
+      }
+    }, {
+      key: "show",
+      value: function show() {
+        var _this4 = this;
+
+        setTimeout(function () {
+          return _this4.intro();
+        }, 400);
+      }
+    }]);
+
+    return Blob;
+  }();
+
+  ;
+  window.Blob = Blob;
+  var DOM = {};
+  var blobs = [];
+  DOM.svg = document.querySelector('svg.scene');
+  Array.from(DOM.svg.querySelectorAll('g')).forEach(function (el) {
+    var blob = new Blob(el);
+    blobs.push(blob);
+    blob.intro();
+  });
+  DOM.content = document.querySelector('.content--reveal');
+  DOM.contentInner = Array.from(DOM.content.querySelectorAll('.content__inner'), function (el) {
+    charming(el);
+    return el;
+  });
+  DOM.ctrlBack = DOM.content.querySelector('.content__close');
+  DOM.links = Array.from(document.querySelectorAll('.menu > .menu__item'));
+  DOM.links.forEach(function (link, pos) {
+    link.style.pointerEvents = 'none';
+    charming(link);
+    anime({
+      targets: link.querySelectorAll('span'),
+      duration: 800,
+      delay: function delay(t, i) {
+        return anime.random(0, 600) + 500;
+      },
+      easing: 'easeInOutQuad',
+      opacity: [0, 1],
+      complete: function complete() {
+        link.style.pointerEvents = 'auto';
+        link.classList.add('menu__item--showDeco');
+      }
+    });
+    link.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      open(pos);
+    });
+  });
+  DOM.ctrlBack.addEventListener('click', function () {
+    return close();
+  });
+  var current;
+
+  var open = function open(pos) {
+    _this5.isOpen = true;
+    anime({
+      targets: DOM.links.map(function (link) {
+        return link.querySelectorAll('span');
+      }),
+      delay: function delay(t, i) {
+        return anime.random(0, 300);
+      },
+      duration: 200,
+      easing: 'easeInOutQuad',
+      opacity: 0,
+      begin: function begin() {
+        return DOM.links.forEach(function (link) {
+          link.style.pointerEvents = 'none';
+          link.classList.remove('menu__item--showDeco');
+        });
+      }
+    });
+    current = pos;
+    var currentBlob = blobs[current];
+    currentBlob.expand().then(function () {
+      DOM.content.style.pointerEvents = 'auto';
+      var contentInner = DOM.contentInner[pos];
+      contentInner.style.opacity = 1;
+      anime({
+        targets: [contentInner.querySelectorAll('.content__title > span'), contentInner.querySelectorAll('.content__subtitle > span'), DOM.ctrlBack],
+        duration: 200,
+        delay: function delay(t, i) {
+          return anime.random(0, 600);
+        },
+        easing: 'easeInOutQuad',
+        opacity: [0, 1]
+      });
+    });
+    blobs.filter(function (el) {
+      return el != currentBlob;
+    }).forEach(function (blob) {
+      return blob.hide();
+    });
+  };
+
+  var close = function close() {
+    if (!_this5.isOpen) return;
+    _this5.isOpen = false;
+    var contentInner = DOM.contentInner[current];
+    anime({
+      targets: [contentInner.querySelectorAll('.content__title > span'), contentInner.querySelectorAll('.content__subtitle > span'), DOM.ctrlBack],
+      delay: function delay(t, i) {
+        return anime.random(0, 300);
+      },
+      duration: 200,
+      easing: 'easeInOutQuad',
+      opacity: 0,
+      complete: function complete() {
+        contentInner.style.opacity = 0;
+        DOM.content.style.pointerEvents = 'none';
+      }
+    });
+    blobs[current].collapse().then(function () {
+      current = -1;
+      anime({
+        targets: DOM.links.map(function (link) {
+          return link.querySelectorAll('span');
+        }),
+        duration: 200,
+        delay: function delay(t, i) {
+          return anime.random(0, 600);
+        },
+        easing: 'easeInOutQuad',
+        opacity: 1,
+        complete: function complete() {
+          return DOM.links.forEach(function (link) {
+            link.style.pointerEvents = 'auto';
+            link.classList.add('menu__item--showDeco');
+          });
+        }
+      });
+    });
+    blobs.filter(function (el) {
+      return el != blobs[current];
+    }).forEach(function (blob) {
+      return blob.show();
+    });
+  };
+}
+;
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./resources/js/blob.js"]();
+/******/ 	
+/******/ })()
+;

@@ -1,5 +1,9 @@
 <section id="navigation" class="body-font relative min-h-full text-gray-700 bg-white">
-    <div class="bg-dvlpmn-blue-nav items-center w-full px-4">
+    <div
+        x-intersect:leave="showToTopBtn = true" 
+        x-intersect:enter="showToTopBtn = false" 
+        class="bg-dvlpmn-blue-nav items-center w-full px-4"
+    >
         <nav class="2xl:max-w-[90vw] z-[999999999] max-w-[95vw] border-1 relative flex items-center justify-between mx-auto space-x-12 text-lg tracking-widest">
             <a href="{{ route('home') }}">
                 <img class="w-[280px]" src="{{ asset('storage/images/developmanlogo.svg') }}" alt="Developman Logo" />
