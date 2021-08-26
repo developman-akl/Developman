@@ -30,6 +30,7 @@ module.exports = {
                 'dvlpmn-blue-mid': '#0041aa',
                 'dvlpmn-blue-light': '#0050D1',
                 'dvlpmn-blue-nav': '#0050D16B',
+                'dvlpmn-blue-nav-btn': '#00358a',
             }
         },
     },
