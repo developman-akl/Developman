@@ -1,12 +1,12 @@
-<section id="projects" >
+<section class="section" id="projects" x-ref="projects">
     <div
-        x-data="{ shown: false }" 
-        x-intersect.once="shown = true"
+        x-data="{ shown_projects: false }"
+        x-intersect.once="shown_projects = true"
         class="bg-dvlpmn-gray-dark flex flex-col justify-around w-screen min-h-screen px-2 overflow-hidden"
     >
         <h1 
             x-cloak 
-            x-show="shown" 
+            x-show="shown_projects" 
             x-transition.duration.1500ms.opacity.enter.scale.50.leave.scale.60
             class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark text-3xl font-extrabold tracking-wider text-center"
         >
@@ -49,11 +49,12 @@
                     </button>
                 </div>
         
-                <div x-ref="container" class="swiper-container">
+                <div x-ref="container" class="swiper">
                     <div class="swiper-wrapper">
                         
                         {{-- Javasolj! --}}
-                        <a href="{{ route('projects.1') }}" class="swiper-slide p-1 transition duration-1000">
+                        {{-- <a href="{{ route('projects.1') }}" class="swiper-slide p-1 transition duration-1000"> --}}
+                        <a href="https://javasolj.com" target="_blank" class="swiper-slide p-1 transition duration-1000">
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
@@ -98,7 +99,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_novaerus.jpg') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Inventory & Stock Management<br><br>' !!}
                                         </h2>
@@ -129,13 +130,14 @@
                         </a>  --}}
 
                         {{-- Manufacturing --}}
-                        <a href="{{ route('projects.3') }}" class="swiper-slide p-1 transition duration-1000">
+                        {{-- <a href="{{ route('projects.3') }}" class="swiper-slide p-1 transition duration-1000"> --}}
+                        <div class="swiper-slide p-1 transition duration-1000">
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Medical Shoes Manufacturing<br>' !!}
                                         </h2>
@@ -160,20 +162,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </a> 
+                        </div> 
 
                         {{-- SeiyraDesign --}}
-                        <a href="{{ route('projects.4') }}" class="swiper-slide p-1 transition duration-1000">
+                        {{-- <a href="{{ route('projects.4') }}" class="swiper-slide p-1 transition duration-1000"> --}}
+                        <a href="https://seiyradesign.com" target="_blank" class="swiper-slide p-1 transition duration-1000">
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'SeiyraDesign<br>' !!}
                                         </h2>
-                                        <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
+                                        <article class="max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
                                             {!! 'The official website of SeiyraDesign.<br><br><br>' !!}
                                         </article> 
                                     </div>
@@ -197,13 +200,14 @@
                         </a>  
 
                         {{-- Developman --}}
-                        <a href="{{ route('projects.5') }}" class="swiper-slide p-1 transition duration-1000">
+                        {{-- <a href="{{ route('projects.5') }}" class="swiper-slide p-1 transition duration-1000"> --}}
+                        <div class="swiper-slide p-1 transition duration-1000">
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_developman.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Developman website<br>' !!}
                                         </h2>
@@ -231,16 +235,17 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>  
+                        </div>  
 
                         {{-- Bakery Task Manager --}}
-                        <a href="{{ route('projects.6') }}" class="swiper-slide p-1 transition duration-1000">
+                        {{-- <a href="{{ route('projects.6') }}" class="swiper-slide p-1 transition duration-1000"> --}}
+                        <div class="swiper-slide p-1 transition duration-1000">
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="kep1" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto cursor-help relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Bakery Task Manager<br>' !!}
                                         </h2>
@@ -268,7 +273,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </a>  
+                        </div>  
                         
                     </div>
                 </div>
@@ -285,7 +290,7 @@
         </div>
         <div 
             x-cloak 
-            x-show="shown" 
+            x-show="shown_projects" 
             x-transition.duration.2000ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
             class="md:text-left flex justify-center text-center"
         >

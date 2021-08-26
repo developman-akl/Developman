@@ -1,9 +1,9 @@
-<section id="contact">
+<section class="section" id="contact" x-ref="contact" >
     <div
         x-data="contactForm()" 
-        x-ref="contact" 
+        x-ref="contactInner"
         x-intersect.once="showAnimation = true"
-        class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-between w-screen pb-24"
+        class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-between w-screen min-h-screen pb-24"
     >
         <div class="absolute top-0 z-0 w-full h-[15%] bg-white"></div>
         <div class="absolute bottom-0 z-0 w-full h-[85%] bg-dvlpmn-blue-dark"></div>
@@ -11,7 +11,7 @@
             <h1 
                 x-cloak 
                 x-show="showAnimation" 
-                x-transition.duration.1500ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.top
+                x-transition.duration.1100ms.opacity.enter.scale.50.leave.scale.60.origin.top
                 class="lg:text-4xl xl:text-5xl lg:mb-24 text-dvlpmn-blue-dark mb-6 text-3xl font-extrabold tracking-wider text-center"
             >
                 <span>CONTACT</span>
@@ -19,7 +19,7 @@
             <h2 
                 x-cloak 
                 x-show="showAnimation" 
-                x-transition.duration.1500ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
+                x-transition.duration.1100ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
                 class=" md:text-base lg:text-lg xl:text-xl 2xl:mb-12 text-dvlpmn-blue-light mb-0 text-sm font-extrabold tracking-wider text-center"
             >
                 <span>CONTACT DEVELOPMAN TODAY</span>
@@ -32,7 +32,7 @@
                     <div 
                         x-cloak 
                         x-show="showAnimation"
-                        x-transition.duration.1500ms.delay.350ms.opacity.enter.scale.10.leave.scale.60.origin.right
+                        x-transition.duration.1200ms.delay.150ms.opacity.enter.scale.10.leave.scale.60.origin.right
                         class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
                     >
                         <input type="text" name="name" x-model="formData.name" placeholder="Name" autocomplete="on" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
@@ -40,7 +40,7 @@
                     <div 
                         x-cloak 
                         x-show="showAnimation"
-                        x-transition.duration.1500ms.delay.450ms.opacity.enter.scale.10.leave.scale.60.origin.right
+                        x-transition.duration.1200ms.delay.200ms.opacity.enter.scale.10.leave.scale.60.origin.right
                         class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
                     >
                         <input type="email" name="email" x-model="formData.email" placeholder="Email" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
@@ -48,7 +48,7 @@
                     <div 
                         x-cloak 
                         x-show="showAnimation"
-                        x-transition.duration.1500ms.delay.550ms.opacity.enter.scale.10.leave.scale.60.origin.right
+                        x-transition.duration.1200ms.delay.250ms.opacity.enter.scale.10.leave.scale.60.origin.right
                         class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
                     >
                         <textarea name="message" x-model="formData.message" rows="10" cols="50" class="md:text-left caret-black bg-dvlpmn-gray-dark focus:outline-none placeholder-dvlpmn-blue-light w-full h-40 py-3 pl-5 text-center placeholder-opacity-75 border-0" placeholder="Message"></textarea>
@@ -58,10 +58,10 @@
                 <div 
                     x-cloak 
                     x-show="showAnimation" 
-                    x-transition.duration.1500ms.delay.1000ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
+                    x-transition.duration.1200ms.delay.600ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
                     class="relative flex justify-center px-2 mt-6"
                 >
-                    <button x-text="buttonLabel" @click="$refs.contact.scrollIntoView(); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
+                    <button x-text="buttonLabel" @click="$refs.contactInner.scrollIntoView({behavior: 'smooth'}); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
                         SEND
                     </button>
                 </div>

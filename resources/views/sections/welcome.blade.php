@@ -1,13 +1,13 @@
-<section id="welcome">
+<section class="section" id="welcome" x-ref="welcome">
     <div
-        x-data="{ shown: false }" 
-        x-intersect.once="shown = true"
+        x-data="{ shown_welcome: false }" 
+        x-intersect.once="shown_welcome = true"
         class="gradient-background relative flex flex-col justify-between h-screen pb-4"
     >
         <!-- Main Hero Content -->
         <div class="px-4 pt-10 2xl:ml-[4.6%] ml-[3%] text-left">
             <div class="portrait:md:text-5xl lg:text-6xl portrait:sm:text-4xl sm:text-2xl absolute z-[9999] space-y-10 text-xl font-extrabold tracking-widest text-left text-dvlpmn-blue-dark">
-                <h1 x-cloak x-show="shown" x-transition.duration.1000ms class="space-y-3">
+                <h1 x-cloak x-show="shown_welcome" x-transition.duration.1000ms class="space-y-3">
                     <div class="text-fade-in block font-extrabold text-left">
                         <span class="text-wrapper">
                             <span class="letters">Custom</span>
@@ -28,7 +28,7 @@
                 
                 <div 
                     x-cloak 
-                    x-show="shown" 
+                    x-show="shown_welcome" 
                     x-transition.duration.1600ms.delay.750ms.opacity.enter.scale.10.leave.scale.50.origin.left
                     class="md:block absolute text-left"
                 >

@@ -31,7 +31,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@7.0.1/swiper.min.css" />
         <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         
@@ -42,14 +42,14 @@
         <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@7.0.1/swiper-bundle.min.js"></script>
         <script src="{{ asset('js/app.js') }}" defer></script>
         
         <!-- robots.txt -->
         {!! Robots::metaTag() !!}
 
     </head>
-    <body class="font-orbitron caret-transparent antialiased">
+    <body class="font-orbitron caret-transparent antialiased" x-data >
         
         <!-- Page Heading Fixed Nav Bar-->
         <header>

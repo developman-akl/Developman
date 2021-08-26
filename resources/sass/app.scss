@@ -24,56 +24,17 @@ button:disabled {
     background-color: transparent;
 }
 
+#section-container {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
 
 .gradient-background {
     background: transparent linear-gradient(180deg, #0050D16B 0%, #FFFFFF54 100%) 0% 0% no-repeat padding-box;
 }
-
-/* Navigation */
-.sd-navbar {
-    background: $navbarbg;
-    opacity: 1;
-
-    .nav-logo-img {
-        float: left;
-        position: relative;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .sd-nav {
-
-        ul {
-            margin: 0;
-
-            li {
-                display: inline-block;
-                list-style-type: none;
-                margin-left: 20px;
-
-                p {
-                    font-family: "Montserrat";
-                    letter-spacing: 2.6px;
-                    color: $secondaryCol;
-                    opacity: 1;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                }
-
-                p:hover {
-                    color: $primaryCol;
-                    cursor: pointer;
-                }
-            }
-        }
-    }
-}
-
-/* END - Navigation */
-
 
 .image_container {
 
