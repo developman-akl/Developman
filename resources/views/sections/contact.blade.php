@@ -61,7 +61,7 @@
                     x-transition.duration.1200ms.delay.600ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
                     class="relative flex justify-center px-2 mt-6"
                 >
-                    <button x-text="buttonLabel" @click="$refs.contactInner.scrollIntoView({behavior: 'smooth'}); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
+                    <button x-text="buttonLabel" @click="$refs.contactInner.scrollIntoView({behavior: 'smooth'}); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg" aria-label="SEND">
                         SEND
                     </button>
                 </div>
