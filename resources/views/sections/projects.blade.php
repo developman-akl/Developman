@@ -55,7 +55,7 @@
                         {{-- Javasolj! --}}
                         {{-- <a href="{{ route('projects.1') }}" class="swiper-slide p-1 transition duration-1000"> --}}
                         <a href="https://javasolj.com" target="_blank" class="swiper-slide p-1 transition duration-1000">
-                            <div class="max-w-2xl p-2 mx-auto">
+                            <div class="max-w-2xl p-2 mx-auto" rel="noreferrer">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="Javasolj! image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
@@ -166,7 +166,7 @@
 
                         {{-- SeiyraDesign --}}
                         {{-- <a href="{{ route('projects.4') }}" class="swiper-slide p-1 transition duration-1000"> --}}
-                        <a href="https://seiyradesign.com" target="_blank" class="swiper-slide p-1 transition duration-1000">
+                        <a href="https://seiyradesign.com" target="_blank" class="swiper-slide p-1 transition duration-1000" rel="noreferrer">
                             <div class="max-w-2xl p-2 mx-auto">
                                 <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
                                     <div class="md:flex-shrink-0 border-b">
@@ -294,7 +294,7 @@
             x-transition.duration.2000ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
             class="md:text-left flex justify-center text-center"
         >
-            <a href="#about" type="button" class="ripple md:w-auto hover:bg-dvlpmn-blue-mid hover:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:px-8 md:py-4 md:text-base bg-dvlpmn-blue-light caret-transparent inline-flex items-center justify-center w-full px-5 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg">
+            <a href="#about" type="button" class="ripple md:w-auto hover:bg-dvlpmn-blue-mid hover:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:px-8 md:py-4 md:text-base bg-dvlpmn-blue-light caret-transparent inline-flex items-center justify-center w-full px-5 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg" rel="noreferrer">
                 ABOUT DEVELOPMAN
             </a>
         </div>
