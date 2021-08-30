@@ -274,6 +274,44 @@
                                 </div>
                             </div>
                         </div>  
+
+
+                         {{-- NZTechAds --}}
+                        {{-- <a href="{{ route('projects.6') }}" class="swiper-slide p-1 transition duration-1000"> --}}
+                            <div class="swiper-slide p-1 transition duration-1000">
+                                <div class="max-w-2xl p-2 mx-auto">
+                                    <div class="shadow-news rounded-xl bg-gray-50 mb-6 tracking-wider border" >
+                                        <div class="md:flex-shrink-0 border-b">
+                                            <img src="{{ asset('storage/images/nztechads5.png') }}" alt="NZTechAds image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
+                                        </div>
+                                        <div class="md:h-[180px] h-auto relative px-4 py-2 mt-2 text-center">
+                                            <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
+                                                {!! 'NZTechAds<br>' !!}
+                                            </h2>
+                                            <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
+                                                {!! 'NZTechAds is a classified ads site for new and used premium tech products.<br><br>' !!}
+                                            </article> 
+                                        </div>
+                                        <div class="justify-evenly sm:flex-row sm:space-y-0 flex flex-col items-center py-1 space-y-2 border-t">
+                                            <div class="flex items-center justify-center mx-auto">
+                                                <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg" alt="Wordpress Logo" title="Wordpress" />
+                                            </div>
+                                            <div class="flex items-center justify-center mx-auto">
+                                                <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
+                                            </div>
+                                            <div class="flex items-center justify-center mx-auto">
+                                                <img class="h-4" src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-4-logo-png-transparent.png" alt="Bootstrap Logo" title="Bootstrap" />
+                                            </div>
+                                            <div class="flex items-center justify-center mx-auto">
+                                                <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg" alt="JQuery Logo" title="JQuery" />
+                                            </div>
+                                            <div class="flex items-center justify-center mx-auto">
+                                                <x-svg.icons.livewire />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
                         
                     </div>
                 </div>
