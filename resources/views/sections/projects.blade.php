@@ -139,7 +139,7 @@
                                     </div>
                                     <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
-                                            {!! 'Medical Shoes Manufacturing<br>' !!}
+                                            {!! 'Medical Shoes Manufacturing BMS<br>' !!}
                                         </h2>
                                         <article class=" max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
                                             {!! 'Business Management Software for a medical shoes manufacturing company.<br><br>' !!}
@@ -177,7 +177,7 @@
                                     </div>
                                     <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
-                                            {!! 'SeiyraDesign<br>' !!}
+                                            {!! 'SeiyraDesign website<br>' !!}
                                         </h2>
                                         <article class="max-w-full px-2 mt-2 mr-1 prose text-gray-700 break-words">
                                             {!! 'The official website of SeiyraDesign.<br><br><br>' !!}
