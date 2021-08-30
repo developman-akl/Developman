@@ -267,9 +267,6 @@
                                             <img class="h-4" src="https://laravel.com/img/logomark.min.svg" alt="Laravel Logo" title="Laravel" />
                                             <img class="h-3" src="https://laravel.com/img/logotype.min.svg" alt="Laravel Logo" title="Laravel" />
                                         </div>
-                                        <div class="flex items-center justify-center mx-auto">
-                                            <x-svg.icons.livewire />
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -304,9 +301,6 @@
                                             </div>
                                             <div class="flex items-center justify-center mx-auto">
                                                 <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/JQuery-Logo.svg" alt="JQuery Logo" title="JQuery" />
-                                            </div>
-                                            <div class="flex items-center justify-center mx-auto">
-                                                <x-svg.icons.livewire />
                                             </div>
                                         </div>
                                     </div>
