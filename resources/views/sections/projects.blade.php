@@ -223,9 +223,6 @@
                                             <img class="h-4" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" alt="HTML5 Powered" title="HTML5 Powered">
                                         </div>
                                         <div class="flex items-center justify-center mx-auto">
-                                            <img class="h-4" src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="SASS" title="SASS">
-                                        </div>
-                                        <div class="flex items-center justify-center mx-auto">
                                             <x-svg.icons.tailwind />
                                         </div>
                                         <div class="flex items-center justify-center mx-auto">
