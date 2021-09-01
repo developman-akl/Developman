@@ -11,7 +11,6 @@
                 x-transition.duration.1000ms
             >
                 PROJECTS
-                
             </span>
         </h1>
         
