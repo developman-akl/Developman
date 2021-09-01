@@ -138,7 +138,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="Medical Shoes Manufacturing image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] my-8 h-content relative px-4 text-center">
+                                    <div class="md:h-[180px] relative px-4 py-2 my-8 h-content text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Medical Shoes Manufacturing BMS<br>' !!}
                                         </h2>
