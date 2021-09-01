@@ -1,28 +1,37 @@
 <div class="body-font relative z-0 min-h-full text-gray-700 bg-white">
-    <div class="max-w-7xl sm:flex-row lg:justify-between container flex flex-wrap items-center justify-center py-5 mx-auto">
+    <div class="max-w-7xl lg:flex-row lg:justify-between container flex flex-wrap items-center justify-center py-5 mx-auto">
         <div class="flex flex-col space-y-2 tracking-wide">
-            <a href="#navigation" class="sm:justify-start flex justify-center">
+            <a href="#navigation" class="lg:justify-start flex justify-center">
                 <img class="w-[80%] select-none" src="{{ asset('storage/images/developmanlogo.svg') }}" alt="Developman Logo" />
             </a>
-            <div class="sm:text-left text-dvlpmn-blue-dark ml-5 text-sm text-center">
-                © <script>document.write(new Date().getFullYear())</script> Developman
-
-                <span class="pl-3 ml-2 border-l">
-                    Designed by 
-                    <a class="hover:text-purple-500 font-bold underline duration-700" href="https://seiyradesign.com">
-                        SeiyraDesign
-                    </a>
-                </span>
+            <div class="lg:text-left text-dvlpmn-blue-dark lg:flex-row lg:ml-3 flex flex-col text-sm text-center">
+                <div>
+                    © <script>document.write(new Date().getFullYear())</script> Developman
+                </div>
+                <div>
+                    <span class="lg:pl-3 lg:ml-2 lg:border-l">
+                        Designed by 
+                        <a class="hover:text-purple-500 font-bold underline duration-700" href="https://seiyradesign.com">
+                            SeiyraDesign
+                        </a>
+                    </span>
+                </div>
             </div>
         </div>
 
-        <div class="flex flex-col space-y-10">
-            <div class="sm:mt-0 sm:text-left sm:flex-row flex flex-col mt-8 font-black tracking-wider text-center uppercase">
-                <span class="text-dvlpmn-blue-light sm:mr-2">Custom Solutions,</span>
+        <div class="lg:space-y-8 flex flex-col">
+            <div class="lg:mt-0 lg:text-left lg:flex-row flex flex-col mt-8 font-black tracking-wider text-center uppercase">
+                <span class="text-dvlpmn-blue-light lg:mr-2">Custom Solutions,</span>
                 <span class="text-dvlpmn-blue-dark">Outstanding Results.</span>
             </div>
-            <div class="sm:text-right lg:justify-end flex justify-center mb-0 text-center">
-                <span class="sm:ml-auto sm:justify-start sm:space-x-5 space-x-14 inline-flex">
+            <div class="lg:text-right lg:justify-end lg:flex-row lg:space-y-2 flex flex-col-reverse justify-center space-y-8">
+                <div class="lg:mt-0 flex justify-center mt-8">
+                    <a href="https://www.digitalocean.com/?refcode=ddc572a5cacd&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" class="hover:text-dvlpmn-blue-light text-dvlpmn-blue-dark hover:scale-125 duration-700 transform" target="_blank" title="DigitalOcean Referral Badge" rel="noreferrer">
+                        <img src="https://web-platforms.sfo2.digitaloceanspaces.com/WWW/Badge%202.svg" alt="DigitalOcean Referral Badge" />
+                    </a>
+                </div>
+                
+                <div class="lg:ml-auto lg:justify-start lg:space-x-5 space-x-14 inline-flex align-middle">
                     <a href="mailto:info@developman.tech" class="hover:text-dvlpmn-blue-light text-dvlpmn-blue-dark hover:scale-125 duration-700 transform" target="_blank" title="Email" rel="noreferrer">
                         <span class="sr-only">LinkedIn</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +54,7 @@
                             <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
                         </svg>
                     </a>
-                </span>
+                </div>
             </div>
         </div>
     </div>

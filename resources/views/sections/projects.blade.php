@@ -2,15 +2,17 @@
     <div
         x-data="{ shown_projects: false }"
         x-intersect.once="shown_projects = true"
-        class="bg-dvlpmn-gray-dark flex flex-col justify-around w-screen min-h-screen px-2 overflow-hidden"
+        class="bg-dvlpmn-gray-dark flex flex-col justify-around w-screen min-h-screen px-2 py-8"
     >
-        <h1 
-            x-cloak 
-            x-show="shown_projects" 
-            x-transition.duration.1500ms.opacity.enter.scale.50.leave.scale.60
-            class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark text-3xl font-extrabold tracking-wider text-center"
-        >
-            <span>PROJECTS</span>
+        <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark mb-12 text-3xl font-extrabold tracking-wider text-center">
+            <span 
+                x-cloak 
+                x-show="shown_projects" 
+                x-transition.duration.1000ms
+            >
+                PROJECTS
+                
+            </span>
         </h1>
         
         <div>
@@ -60,7 +62,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_javasolj_scr_0.png') }}" alt="Javasolj! image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="cursor-help md:h-[180px] h-auto relative px-4 py-2 mt-2 text-center">
+                                    <div class="cursor-help md:h-[180px] my-8 h-content relative px-4 py-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Javasolj!<br>' !!}
                                         </h2>
@@ -129,7 +131,7 @@
                             </div>
                         </a>  --}}
 
-                        {{-- Manufacturing --}}
+                        {{-- Medical Shoes Manufacturing BMS --}}
                         {{-- <a href="{{ route('projects.3') }}" class="swiper-slide p-1 transition duration-1000"> --}}
                         <div class="swiper-slide p-1 transition duration-1000">
                             <div class="max-w-2xl p-2 mx-auto">
@@ -137,7 +139,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_shoes_scr_4.png') }}" alt="Medical Shoes Manufacturing image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] my-8 h-content relative px-4 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Medical Shoes Manufacturing BMS<br>' !!}
                                         </h2>
@@ -175,7 +177,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_seiyradesign_0.png') }}" alt="SeiyraDesign image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] relative px-4 py-2 my-8 h-content text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'SeiyraDesign website<br>' !!}
                                         </h2>
@@ -210,7 +212,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_developman.png') }}" alt="Developman image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] my-8 h-content relative px-4 py-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Developman website<br>' !!}
                                         </h2>
@@ -245,7 +247,7 @@
                                     <div class="md:flex-shrink-0 border-b">
                                         <img src="{{ asset('storage/images/project_task_manager_scr_0.png') }}" alt="Bakery Task Manager image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                     </div>
-                                    <div class="md:h-[180px] h-auto  relative px-4 py-2 mt-2 text-center">
+                                    <div class="md:h-[180px] my-8 h-content relative px-4 py-2 text-center">
                                         <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                             {!! 'Bakery Task Manager<br>' !!}
                                         </h2>
@@ -284,7 +286,7 @@
                                         <div class="md:flex-shrink-0 border-b">
                                             <img src="{{ asset('storage/images/nztechads5.png') }}" alt="NZTechAds image" class="h-60 rounded-xl object-cover w-full rounded-b-none">
                                         </div>
-                                        <div class="md:h-[180px] h-auto relative px-4 py-2 mt-2 text-center">
+                                        <div class="md:h-[180px] my-8 h-content relative px-4 py-2 text-center">
                                             <h2 class="font-montserrat text-lg font-extrabold tracking-normal text-gray-800">
                                                 {!! 'NZTechAds<br>' !!}
                                             </h2>
