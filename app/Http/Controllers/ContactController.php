@@ -25,11 +25,47 @@ class ContactController extends Controller
 
 		$details = $validator->validated();
 
-		dispatch(new SendEmailJob($details));
-      
-		return response()->json([
-			'status' => 'success',
-			'message' => 'Thank you for contacting me! I will be in touch as soon as possible.'
-		], 200);
+		$url = 'https://www.google.com/recaptcha/api/siteverify';
+
+		$remoteip = $_SERVER['REMOTE_ADDR'];
+
+		$data = [
+			'secret' => config('services.recaptcha.secret'),
+			'response' => $request->get('recaptcha'),
+			'remoteip' => $remoteip
+		];
+
+		$options = [
+			'http' => [
+			'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+			'method' => 'POST',
+			'content' => http_build_query($data)
+			]
+		];
+
+		$context = stream_context_create($options);
+		$result = file_get_contents($url, false, $context);
+		$resultJson = json_decode($result);
+
+		if ($resultJson->success != true) {
+			return response()->json([
+				'status' => 'error',
+				'message' => 'ReCaptcha Error'
+			], 200);
+		}
+
+		if ($resultJson->score >= 0.3) {
+			dispatch(new SendEmailJob($details));
+
+			return response()->json([
+				'status' => 'success',
+				'message' => 'Thank you for contacting me! I will be in touch as soon as possible.'
+			], 200);
+		} else {
+			return response()->json([
+				'status' => 'error',
+				'message' => 'ReCaptcha Error'
+			], 200);
+		}
 	}
 }
