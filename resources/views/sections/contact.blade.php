@@ -89,7 +89,7 @@
             </form>
         </div>
 
-        <div class="absolute mt-2">
+        <div class="top-2 absolute">
                 <div x-cloak 
                     x-on:click.away="show = false" 
                     x-show="responseStatus == 'success'" 
