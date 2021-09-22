@@ -28,8 +28,6 @@ class ContactController extends Controller
 		$url = 'https://www.google.com/recaptcha/api/siteverify';
 
 		$remoteip = $_SERVER['REMOTE_ADDR'];
-		
-ray($remoteip);
 
 		$data = [
 			'secret' => config('services.recaptcha.secret'),
@@ -37,13 +35,17 @@ ray($remoteip);
 			'remoteip' => $remoteip
 		];
 
+ray($data);
+
 		$options = [
 			'http' => [
-			'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-			'method' => 'POST',
-			'content' => http_build_query($data)
+				'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+				'method' => 'POST',
+				'content' => http_build_query($data)
 			]
 		];
+
+ray($options);
 
 		$context = stream_context_create($options);
 		$result = file_get_contents($url, false, $context);
