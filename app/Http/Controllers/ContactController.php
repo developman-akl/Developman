@@ -47,25 +47,18 @@ class ContactController extends Controller
 		$result = file_get_contents($url, false, $context);
 		$resultJson = json_decode($result);
 
-		if ($resultJson->success != true) {
+		if ($resultJson->success != true || $resultJson->score < 0.3) {
 			return response()->json([
 				'status' => 'error',
 				'message' => 'ReCaptcha Error'
 			], 200);
 		}
 
-		if ($resultJson->score >= 0.3) {
-			dispatch(new SendEmailJob($details));
+		dispatch(new SendEmailJob($details));
 
-			return response()->json([
-				'status' => 'success',
-				'message' => 'Thank you for contacting me! I will be in touch as soon as possible.'
-			], 200);
-		} else {
-			return response()->json([
-				'status' => 'error',
-				'message' => 'ReCaptcha Error'
-			], 200);
-		}
+		return response()->json([
+			'status' => 'success',
+			'message' => 'Thank you for contacting me! I will be in touch as soon as possible.'
+		], 200);
 	}
 }
