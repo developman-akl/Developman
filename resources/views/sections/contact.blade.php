@@ -3,7 +3,7 @@
         x-data="contactForm()" 
         x-ref="contactInner"
         x-intersect.once="showAnimation = true"
-        class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-around w-screen pb-24"
+        class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-around w-screen pb-12"
     >
         <div class="absolute top-0 z-0 w-full h-[11.5%] bg-white"></div>
         <div class="absolute bottom-0 z-0 w-full h-[88.5%] bg-dvlpmn-blue-dark"></div>
