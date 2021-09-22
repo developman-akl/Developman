@@ -70,8 +70,8 @@
                 
                 <div class="mt-5 text-xs text-gray-400 w-[70%] text-center justify-center mx-auto">
                     This site is protected by reCAPTCHA and the Google
-                    <a class="text-blue-500" href="https://policies.google.com/privacy">Privacy Policy</a> and
-                    <a class="text-blue-500" href="https://policies.google.com/terms">Terms of Service</a> apply.
+                    <a href="https://policies.google.com/privacy" target="_blank" class="text-blue-500">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms" target="_blank" class="text-blue-500">Terms of Service</a> apply.
                 </div>
 
                 <a 
