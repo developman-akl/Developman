@@ -35,8 +35,8 @@ class ContactController extends Controller
 			'remoteip' => $remoteip
 		];
 
-ray($request->all());
-ray($data);
+		ray($request->all());
+		ray($data);
 
 		$options = [
 			'http' => [
@@ -46,13 +46,11 @@ ray($data);
 			]
 		];
 
-// ray($options);
-
 		$context = stream_context_create($options);
 		$result = file_get_contents($url, false, $context);
 		$resultJson = json_decode($result);
 
-ray($context, $result, $resultJson);
+		ray($context, $result, $resultJson);
 
 		if ($resultJson->success != true || $resultJson->score < 0.3) {
 			return response()->json([

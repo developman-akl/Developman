@@ -67,6 +67,12 @@
                         SEND
                     </button>
                 </div>
+                
+                <div class="mt-5 text-xs text-gray-400 w-[70%] text-center justify-center mx-auto">
+                    This site is protected by reCAPTCHA and the Google
+                    <a class="text-blue-500" href="https://policies.google.com/privacy">Privacy Policy</a> and
+                    <a class="text-blue-500" href="https://policies.google.com/terms">Terms of Service</a> apply.
+                </div>
 
                 <a 
                     x-cloak 
@@ -145,17 +151,15 @@
     
     var recaptchaToken;
 
-$(document).ready(function() {
-    grecaptcha.ready(function() {
-        grecaptcha.execute('{{ config('services.recaptcha.sitekey') }}', {action: '/contact'}).then(function(token) {
-            if (token) {
-                document.getElementById('recaptcha').value = token;
-                debugger;
-                recaptchaToken = token;
-            }
+    $(document).ready(function() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{ config('services.recaptcha.sitekey') }}', {action: '/contact'}).then(function(token) {
+                if (token) {
+                    recaptchaToken = token;
+                }
+            });
         });
     });
-});
     
     function contactForm() {
 
