@@ -28,6 +28,8 @@ class ContactController extends Controller
 		$url = 'https://www.google.com/recaptcha/api/siteverify';
 
 		$remoteip = $_SERVER['REMOTE_ADDR'];
+		
+ray($remoteip);
 
 		$data = [
 			'secret' => config('services.recaptcha.secret'),
@@ -46,6 +48,8 @@ class ContactController extends Controller
 		$context = stream_context_create($options);
 		$result = file_get_contents($url, false, $context);
 		$resultJson = json_decode($result);
+
+ray($context, $result, $resultJson);
 
 		if ($resultJson->success != true || $resultJson->score < 0.3) {
 			return response()->json([

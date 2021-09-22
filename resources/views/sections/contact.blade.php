@@ -27,6 +27,8 @@
             
             <form action="/contact" method="POST" x-cloak @submit.prevent="submitData">
                 @csrf
+
+                <input type="hidden" name="recaptcha" id="recaptcha">
                 
                 <div class="flex flex-col items-center mx-auto">
                     <div 
@@ -138,7 +140,17 @@
 </section>
 
 @push('scripts')
+<script src="https://www.google.com/recaptcha/api.js?render={{ config('services.recaptcha.sitekey') }}"></script>
 <script>
+    grecaptcha.ready(function() {
+        grecaptcha.execute('{{ config('services.recaptcha.sitekey') }}', {action: 'contact'}).then(function(token) {
+            debugger;
+            if (token) {
+                document.getElementById('recaptcha').value = token;
+            }
+        });
+    });
+
     function contactForm() {
         return {
             formData: {
