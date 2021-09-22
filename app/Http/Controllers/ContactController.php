@@ -35,6 +35,7 @@ class ContactController extends Controller
 			'remoteip' => $remoteip
 		];
 
+ray($request->all());
 ray($data);
 
 		$options = [
@@ -45,7 +46,7 @@ ray($data);
 			]
 		];
 
-ray($options);
+// ray($options);
 
 		$context = stream_context_create($options);
 		$result = file_get_contents($url, false, $context);
