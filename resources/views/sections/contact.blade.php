@@ -5,14 +5,14 @@
         x-intersect.once="showAnimation = true"
         class="md:px-0 bg-dvlpmn-blue-dark relative flex flex-col items-center justify-around w-screen pb-24"
     >
-        <div class="absolute top-0 z-0 w-full h-[15%] bg-white"></div>
-        <div class="absolute bottom-0 z-0 w-full h-[85%] bg-dvlpmn-blue-dark"></div>
-        <div class="relative top-10 md:w-3/5 lg:w-2/5 w-[90%] h-[content] pt-16 pb-8 mb-8 md:mb-0 bg-dvlpmn-gray-dark rounded shadow-contact">
+        <div class="absolute top-0 z-0 w-full h-[11.5%] bg-white"></div>
+        <div class="absolute bottom-0 z-0 w-full h-[88.5%] bg-dvlpmn-blue-dark"></div>
+        <div class="relative top-4 md:w-3/5 lg:w-2/5 w-[90%] h-[content] pt-9 pb-8 mb-8 md:mb-0 bg-dvlpmn-gray-dark rounded shadow-contact">
             <h1 
                 x-cloak 
                 x-show="showAnimation" 
                 x-transition.duration.1100ms.opacity.enter.scale.50.leave.scale.60.origin.top
-                class="lg:text-4xl xl:text-5xl lg:mb-24 text-dvlpmn-blue-dark mb-6 text-3xl font-extrabold tracking-wider text-center"
+                class="lg:text-4xl xl:text-5xl lg:mb-5 text-dvlpmn-blue-dark mb-6 text-3xl font-extrabold tracking-wider text-center"
             >
                 <span>CONTACT</span>
             </h1>
@@ -20,7 +20,7 @@
                 x-cloak 
                 x-show="showAnimation" 
                 x-transition.duration.1100ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
-                class=" md:text-base lg:text-lg xl:text-xl 2xl:mb-12 text-dvlpmn-blue-light mb-0 text-sm font-extrabold tracking-wider text-center"
+                class=" md:text-base lg:text-lg xl:text-xl 2xl:mb-10 text-dvlpmn-blue-light mb-0 text-sm font-extrabold tracking-wider text-center"
             >
                 <span>CONTACT DEVELOPMAN TODAY</span>
             </h2>
@@ -35,7 +35,7 @@
                         x-cloak 
                         x-show="showAnimation"
                         x-transition.duration.1200ms.delay.150ms.opacity.enter.scale.10.leave.scale.60.origin.right
-                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
+                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-5 border-b-2 border-gray-700"
                     >
                         <input type="text" name="name" x-model="formData.name" placeholder="Name" autocomplete="on" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
                     </div>
@@ -43,7 +43,7 @@
                         x-cloak 
                         x-show="showAnimation"
                         x-transition.duration.1200ms.delay.200ms.opacity.enter.scale.10.leave.scale.60.origin.right
-                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
+                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-5 border-b-2 border-gray-700"
                     >
                         <input type="email" name="email" x-model="formData.email" placeholder="Email" class="md:text-left focus:outline-none caret-black bg-dvlpmn-gray-dark placeholder-dvlpmn-blue-light w-full py-3 pl-5 text-center placeholder-opacity-75 border-0">
                     </div>
@@ -51,9 +51,9 @@
                         x-cloak 
                         x-show="showAnimation"
                         x-transition.duration.1200ms.delay.250ms.opacity.enter.scale.10.leave.scale.60.origin.right
-                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-8 border-b-2 border-gray-700"
+                        class="md:mx-2 hover:border-dvlpmn-blue-light flex w-4/5 mx-4 my-5 border-b-2 border-gray-700"
                     >
-                        <textarea name="message" x-model="formData.message" rows="10" cols="50" class="md:text-left caret-black bg-dvlpmn-gray-dark focus:outline-none placeholder-dvlpmn-blue-light w-full h-40 py-3 pl-5 text-center placeholder-opacity-75 border-0" placeholder="Message"></textarea>
+                        <textarea name="message" x-model="formData.message" rows="8" cols="50" class="md:text-left caret-black bg-dvlpmn-gray-dark focus:outline-none placeholder-dvlpmn-blue-light w-full h-40 py-3 pl-5 text-center placeholder-opacity-75 border-0" placeholder="Message"></textarea>
                     </div>
                 </div>
                 
