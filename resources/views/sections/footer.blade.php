@@ -33,7 +33,7 @@
                 
                 <div class="lg:ml-auto lg:justify-start lg:space-x-5 space-x-14 inline-flex align-middle">
                     <a href="mailto:info@developman.tech" class="hover:text-dvlpmn-blue-light text-dvlpmn-blue-dark hover:scale-125 duration-700 transform" target="_blank" title="Email" rel="noreferrer">
-                        <span class="sr-only">LinkedIn</span>
+                        <span class="sr-only">Email</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
