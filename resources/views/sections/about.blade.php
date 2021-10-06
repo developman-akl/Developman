@@ -22,7 +22,7 @@
                     class="lg:w-1/2 w-full"
                 >
                     <div class="sm:rounded w-full h-auto rounded" style="box-shadow: 10px 13px #001E4F;">
-                        <img src="{{ asset('storage/images/about.png') }}" alt="About Developman" />
+                        <img class="sm:rounded rounded" src="{{ asset('storage/images/about.png') }}" alt="About Developman" />
                     </div>
                 </div>
                 <div class="lg:w-1/2 lg:pl-8 lg:pr-0 lg:pt-0 w-full px-3 space-y-8 tracking-wider">
