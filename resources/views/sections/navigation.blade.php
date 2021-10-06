@@ -23,18 +23,18 @@
                 id="sideMenuHideOnMobile"
                 class="lg:mt-4 lg:w-auto lg:px-4 lg:flex-row lg:translate-y-0 lg:inline-flex lg:items-center lg:mx-1 lg:uppercase border-1 lg:shadow-none text-dvlpmn-blue-dark bg-white/90 lg:bg-transparent duration-50 lg:space-x-8 lg:pl-0 lg:pr-0 absolute top-0 right-0 z-10 flex flex-col w-auto pl-4 pr-10 font-extrabold transition-all transform translate-x-0 -translate-y-full border-gray-900 rounded-md shadow-lg"
             >
-                <button @click.prevent="$refs.services.scrollIntoView({behavior: 'smooth'})" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="SERVICES">
+                <a href="#services" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="SERVICES">
                     SERVICES
-                </button>
-                <button @click.prevent="$refs.projects.scrollIntoView({behavior: 'smooth'})" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="PROJECTS">
+                </a>
+                <a href="#projects" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="PROJECTS">
                     PROJECTS
-                </button>
-                <button @click.prevent="$refs.about.scrollIntoView({behavior: 'smooth'})" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="ABOUT">
+                </a>
+                <a href="#about" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="ABOUT">
                     ABOUT
-                </button>
-                <button @click.prevent="$refs.contact.scrollIntoView({behavior: 'smooth'})" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="CONTACT">
+                </a>
+                <a href="#contact" class="lg:mx-2 hover:border-blue-900 hover:text-blue-900 lg:p-0 py-1 mx-0 my-2 font-bold transition-all duration-500 border-b-2 border-transparent" aria-label="CONTACT">
                     CONTACT
-                </button>
+                </a>
             </div>
         </nav>
     </div>

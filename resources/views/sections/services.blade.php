@@ -1,8 +1,8 @@
 <section class="section" id="services" x-ref="services" >
     <div
         x-data="{ shown_services: false }" 
-        x-intersect:enter.once="shown_services = true"
-        class="section md:px-0 bg-dvlpmn-gray-light flex flex-col justify-around w-screen min-h-screen px-2 py-8"
+        x-intersect.once="shown_services = true"
+        class="section md:px-0 bg-dvlpmn-gray-light lg:min-h-screen flex flex-col justify-around w-screen px-2 py-8"
     >
         <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark mb-12 text-3xl font-extrabold tracking-wider text-center">
             <span 

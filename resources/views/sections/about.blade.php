@@ -2,7 +2,7 @@
     <div
         x-data="{ shown_about: false }" 
         x-intersect.once="shown_about = true"
-        class="md:px-0 bg-dvlpmn-gray-light flex flex-col justify-around w-screen min-h-screen px-2 pt-8 space-y-10"
+        class="md:px-0 bg-dvlpmn-gray-light lg:h-screen flex flex-col justify-around w-screen px-2 pt-8 space-y-10"
     >
         <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark text-3xl font-extrabold tracking-wider text-center">
             <span 

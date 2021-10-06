@@ -2,7 +2,7 @@
     <div
         x-data="{ shown_projects: false }"
         x-intersect.once="shown_projects = true"
-        class="bg-dvlpmn-gray-dark flex flex-col justify-around w-screen min-h-screen px-2 py-8"
+        class="bg-dvlpmn-gray-dark lg:min-h-screen flex flex-col justify-around w-screen px-2 py-8"
     >
         <h1 class="lg:text-4xl xl:text-5xl text-dvlpmn-blue-dark mb-12 text-3xl font-extrabold tracking-wider text-center">
             <span 
