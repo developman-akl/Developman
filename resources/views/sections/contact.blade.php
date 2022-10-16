@@ -85,6 +85,15 @@
                         info@developman.tech
                     </p>
                 </a>
+                      
+                <div class="flex flex-col justify-center mx-auto mt-5 text-center text-blue-500">
+                    <p class="text-lg font-bold">DevelopmanTech Kft.</p>
+                    <p>8800 Nagykanizsa,</p>
+                    <p>Munkás utca 8/D fszt. 2.</p>
+                    <p>Cégjegyzékszám: 20-09-078403</p>
+                    <p>Adószám: 32078952-2-20</p>
+                    <p>Közösségi adószám: HU32078952</p>
+                </div> 
             
             </form>
         </div>

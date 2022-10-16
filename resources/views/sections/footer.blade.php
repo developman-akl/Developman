@@ -4,20 +4,18 @@
             <a href="#navigation" class="lg:justify-start flex justify-center">
                 <img class="w-[80%] select-none" src="{{ asset('storage/images/developmanlogo.svg') }}" alt="Developman Logo" />
             </a>
+       
             <div class="lg:text-left text-dvlpmn-blue-dark lg:flex-row lg:ml-3 flex flex-col text-sm text-center">
                 <div>
                     © <script>document.write(new Date().getFullYear())</script> Developman
                 </div>
                 <div>
                     <span class="lg:pl-3 lg:ml-2 lg:border-l">
-                        Designed by 
-                        <a class="hover:text-purple-500 font-bold underline duration-700" href="https://seiyradesign.com">
-                            SeiyraDesign
-                        </a>
+                        Designed by SeiyraDesign
                     </span>
                 </div>
             </div>
-        </div>
+        </div> 
 
         <div class="lg:space-y-8 flex flex-col">
             <div class="lg:mt-0 lg:text-left lg:flex-row flex flex-col mt-8 font-black tracking-wider text-center uppercase">
