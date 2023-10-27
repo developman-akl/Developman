@@ -86,7 +86,7 @@
                     </p>
                 </a>
                       
-                <div class="flex flex-col justify-center mx-auto mt-5 text-center text-blue-500">
+                <div class="flex flex-col justify-center mx-auto mt-5 text-xs text-center text-blue-500">
                     <p class="text-lg font-bold">DevelopmanTech Kft.</p>
                     <p>8800 Nagykanizsa,</p>
                     <p>Munkás utca 8/D fszt. 2.</p>
