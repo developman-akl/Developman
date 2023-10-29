@@ -11,7 +11,7 @@
                 </div>
                 <div>
                     <a href="{{ asset('storage/docs/adatvédelmi nyilatkozat.pdf') }}" target="_blank" class="lg:pl-3 lg:ml-2 lg:border-l hover:text-dvlpmn-blue-light text-dvlpmn-blue-dark hover:scale-125 duration-300 transform" title="GDPR" rel="noreferrer">
-                        Data protection statement (GDPR)
+                        Privacy Policy
                     </a>
                 </div>
             </div>
