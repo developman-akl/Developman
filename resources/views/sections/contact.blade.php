@@ -16,21 +16,21 @@
             >
                 <span>CONTACT</span>
             </h1>
-            <h2 
+            {{-- <h2 
                 x-cloak 
                 x-show="showAnimation" 
                 x-transition.duration.1100ms.delay.100ms.opacity.enter.scale.50.leave.scale.60.origin.bottom
                 class=" md:text-base lg:text-lg xl:text-xl 2xl:mb-10 text-dvlpmn-blue-light mb-0 text-sm font-extrabold tracking-wider text-center"
             >
                 <span>CONTACT DEVELOPMAN TODAY</span>
-            </h2>
+            </h2> --}}
             
             <form action="/contact" method="POST" x-cloak @submit.prevent="submitData">
                 @csrf
 
                 <input type="hidden" name="recaptcha" id="recaptcha" x-model="formData.recaptcha" />
                 
-                <div class="flex flex-col items-center mx-auto">
+                {{-- <div class="flex flex-col items-center mx-auto">
                     <div 
                         x-cloak 
                         x-show="showAnimation"
@@ -66,13 +66,13 @@
                     <button x-text="buttonLabel" @click="$refs.contactInner.scrollIntoView({behavior: 'smooth'}); hideAlert();" :disabled="loading" class="disabled:opacity-50 hover:shadow-none ripple font-orbitron md:w-auto hover:bg-dvlpmn-blue-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dvlpmn-blue-light md:py-4 md:text-base bg-dvlpmn-blue-dark caret-transparent inline-flex items-center justify-center w-full px-24 py-2 text-sm font-bold leading-6 tracking-widest text-white uppercase transition border border-transparent rounded-md shadow-lg" aria-label="SEND">
                         SEND
                     </button>
-                </div>
+                </div> 
                 
                 <div class="mt-5 text-xs text-gray-400 w-[70%] text-center justify-center mx-auto">
                     This site is protected by reCAPTCHA and the Google
                     <a href="https://policies.google.com/privacy" target="_blank" class="text-blue-500">Privacy Policy</a> and
                     <a href="https://policies.google.com/terms" target="_blank" class="text-blue-500">Terms of Service</a> apply.
-                </div>
+                </div> --}}
 
                 <a 
                     x-cloak 
@@ -95,6 +95,12 @@
                     <p>Közösségi adószám: HU32078952</p>
                 </div> 
             
+                <div class="mt-5 text-xs text-gray-400 w-[70%] text-center justify-center mx-auto">
+                    This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy" target="_blank" class="text-blue-500">Privacy Policy</a> and
+                    <a href="https://policies.google.com/terms" target="_blank" class="text-blue-500">Terms of Service</a> apply.
+                </div>
+                
             </form>
         </div>
 

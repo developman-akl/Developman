@@ -80,7 +80,7 @@
         </div>
         
         <!-- Section Footer -->
-        <footer></footer>
+        <footer>
             @include('sections.footer')
         </footer>
         
